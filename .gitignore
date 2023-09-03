@@ -22,6 +22,9 @@ prj_vivado/*
 #!prjs_hls/ exclusions
 prj_hls/*
 
+#!prjs_vitis/ exclusions
+prj_vitis/*
+
 #!No subir words
 *.docx
 
