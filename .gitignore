@@ -5,13 +5,14 @@
 !.gitignore
 !README.md
 !arm_c_code/
-!arm_c_drivers/
+!exported_XPR_lts/
 !hdl_src/
 !hls_src/
 !ip/
 !scrips/
-!prjs_hls/
-!prjs_vivado/
+!prj_hls/
+!prj_vivado/
+!prj_vitis/
 
 #Adding ignore rules for Vivado projects
 
