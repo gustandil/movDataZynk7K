@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<BindInfo>
-	<BindNode BINDTYPE="op" DISPLAY="bind_op mul" ID="" IMPL="dsp48" LATENCY="3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_12ns_11ns_11ns_22_4_1_U1" SOURCE="../hls_src/wr_data_dir.cpp:61" VARIABLE="mul_ln61" MODULE="wr_data_direct" LOOP="" BUNDLEDNAME="" DSP="1" BRAM="0" URAM="0"/>
-	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="dsp48" LATENCY="3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_12ns_11ns_11ns_22_4_1_U1" SOURCE="../hls_src/wr_data_dir.cpp:61" VARIABLE="add_ln61" MODULE="wr_data_direct" LOOP="" BUNDLEDNAME="" DSP="1" BRAM="0" URAM="0"/>
-	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="s_dir_TDATA_int_regslice" SOURCE="../hls_src/wr_data_dir.cpp:61" VARIABLE="addr" MODULE="wr_data_direct" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
-	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="add_ln66_fu_211_p2" SOURCE="../hls_src/wr_data_dir.cpp:66" VARIABLE="add_ln66" MODULE="wr_data_direct" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
-	<BindNode BINDTYPE="op" DISPLAY="bind_op select" ID="" IMPL="auto_sel" LATENCY="0" OPTYPE="select" PRAGMA="" RTLNAME="select_ln66_fu_217_p3" SOURCE="../hls_src/wr_data_dir.cpp:66" VARIABLE="select_ln66" MODULE="wr_data_direct" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
-	<BindNode BINDTYPE="adapter" DISPLAY="bind_adapter axilite" ID="" IMPL="" LATENCY="" OPTYPE="" PRAGMA="yes" RTLNAME="Axi_lite_s_axi_U" SOURCE="" VARIABLE="" MODULE="wr_data_direct" LOOP="" BUNDLEDNAME="Axi_lite" DSP="0" BRAM="0" URAM="0"/>
-</BindInfo>

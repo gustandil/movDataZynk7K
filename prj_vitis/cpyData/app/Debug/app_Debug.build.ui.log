@@ -1,38 +1,0 @@
-2023-08-31T09:52:59.169331600255-09:52:59 **** Incremental Build of configuration Debug for project app ****
-000-make all 
-000-make --no-print-directory pre-build
-000-a9-linaro-pre-build-step
-000-' '
-000-make --no-print-directory main-build
-000-'Building file: ../src/cpyData_axi_master.cc'
-000-'Invoking: ARM v7 g++ compiler'
-000-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cpyData_axi_master.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/ITCL_video/movDataZynq/prj_vitis/cpyData/platf/export/platf/sw/platf/standalone_domain/bspinclude/include -MMD -MP -MF"src/cpyData_axi_master.d" -MT"src/cpyData_axi_master.o" -o "src/cpyData_axi_master.o" "../src/cpyData_axi_master.cc"
-000-../src/cpyData_axi_master.cc: In function 'int main()':
-000/app/src/cpyData_axi_master.cc148-1-1comparison of integer expressions of different signedness: 'int' and 'uint' {aka 'unsigned int'} [-Wsign-compare]1-../src/cpyData_axi_master.cc:148:24: warning: comparison of integer expressions of different signedness: 'int' and 'uint' {aka 'unsigned int'} [-Wsign-compare]
-000-  148 |         if (statistics >= numWrites) statistics = 0;
-000-      |             ~~~~~~~~~~~^~~~~~~~~~~~
-000/app/src/cpyData_axi_master.cc150-1-1comparison of integer expressions of different signedness: 'int' and 'uint' {aka 'unsigned int'} [-Wsign-compare]1-../src/cpyData_axi_master.cc:150:27: warning: comparison of integer expressions of different signedness: 'int' and 'uint' {aka 'unsigned int'} [-Wsign-compare]
-000-  150 |         while (statistics < numWrites){
-000-      |                ~~~~~~~~~~~^~~~~~~~~~~
-000/app/src/cpyData_axi_master.cc79-1-1unused variable 'row' [-Wunused-variable]1-../src/cpyData_axi_master.cc:79:13: warning: unused variable 'row' [-Wunused-variable]
-000-   79 |         u32 row = ACTUAL_IN_Y;
-000-      |             ^~~
-000/app/src/cpyData_axi_master.cc81-1-1unused variable 'modeWork' [-Wunused-variable]1-../src/cpyData_axi_master.cc:81:13: warning: unused variable 'modeWork' [-Wunused-variable]
-000-   81 |         u32 modeWork = 0;
-000-      |             ^~~~~~~~
-000-'Finished building: ../src/cpyData_axi_master.cc'
-000-' '
-000-'Building target: app.elf'
-000-'Invoking: ARM v7 g++ linker'
-000-arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LD:/ITCL_video/movDataZynq/prj_vitis/cpyData/platf/export/platf/sw/platf/standalone_domain/bsplib/lib -o "app.elf"  ./src/cpyData_axi_master.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
-000-'Finished building target: app.elf'
-000-' '
-000-'Invoking: ARM v7 Print Size'
-000-arm-none-eabi-size app.elf  |tee "app.elf.size"
-000-   text	   data	    bss	    dec	    hex	filename
-000- 581513	   2884	  29160	 613557	  95cb5	app.elf
-000-'Finished building: app.elf.size'
-000-' '
-00255-
-09:53:10 Build Finished (took 11s.406ms)
-

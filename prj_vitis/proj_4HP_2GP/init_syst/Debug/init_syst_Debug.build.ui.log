@@ -1,25 +1,0 @@
-2023-09-03T15:58:36.040058600255-15:58:36 **** Incremental Build of configuration Debug for project init_syst ****
-000-make all 
-000-make --no-print-directory pre-build
-000-a9-linaro-pre-build-step
-000-' '
-000-make --no-print-directory main-build
-000-'Building file: ../src/cpy_direct_multipl_inic.cc'
-000-'Invoking: ARM v7 g++ compiler'
-000-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cpy_direct_multipl_inic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/ITCL_video/movDataZynq/prj_vitis/proj_4HP_2GP/platfm4hp/export/platfm4hp/sw/platfm4hp/standalone_domain/bspinclude/include -MMD -MP -MF"src/cpy_direct_multipl_inic.d" -MT"src/cpy_direct_multipl_inic.o" -o "src/cpy_direct_multipl_inic.o" "../src/cpy_direct_multipl_inic.cc"
-000-'Finished building: ../src/cpy_direct_multipl_inic.cc'
-000-' '
-000-'Building target: init_syst.elf'
-000-'Invoking: ARM v7 g++ linker'
-000-arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LD:/ITCL_video/movDataZynq/prj_vitis/proj_4HP_2GP/platfm4hp/export/platfm4hp/sw/platfm4hp/standalone_domain/bsplib/lib -o "init_syst.elf"  ./src/cpy_direct_multipl_inic.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
-000-'Finished building target: init_syst.elf'
-000-' '
-000-'Invoking: ARM v7 Print Size'
-000-arm-none-eabi-size init_syst.elf  |tee "init_syst.elf.size"
-000-   text	   data	    bss	    dec	    hex	filename
-000- 586669	   2900	132739608	133329177	7f27119	init_syst.elf
-000-'Finished building: init_syst.elf.size'
-000-' '
-00255-
-15:58:38 Build Finished (took 2s.507ms)
-

@@ -1,9 +1,0 @@
-colector_display_Axi_lite_s_axi
-colector_display_regslice_both
-colector_display_regslice_both
-colector_display_regslice_both
-colector_display_regslice_both
-colector_display_regslice_both
-colector_display_regslice_both
-colector_display_regslice_both
-colector_display

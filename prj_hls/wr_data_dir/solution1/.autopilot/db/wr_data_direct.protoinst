@@ -1,9 +1,0 @@
-{
-	"version": "1.0",
-	"modules": {
-		"wr_data_direct": {
-			"proto_instances": {
-			}
-		}
-	}
-}

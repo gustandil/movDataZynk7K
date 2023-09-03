@@ -1,4 +1,0 @@
-<VitisHLS:BurstInfo>
-    <burst group="BURST_VERBOSE_MISSED" fe_name="CouldNotAnalyzeBoundsPatternMissed" src_info="../hls_src/path_thr_axis.cpp:31:19" msg_id="214-252" msg_severity="INFO" msg_body="Could not analyze the loop bounds" resolution="214-252" LoopLoc="../hls_src/path_thr_axis.cpp:31:19" LoopName="VITIS_LOOP_31_1" ParentFunc="path_thr_axis(hls::stream&lt;hls::axis&lt;ap_uint&lt;64&gt;, 1ul, 1ul, 1ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 1ul, 1ul&gt;, 0&gt;&amp;, unsigned int&amp;)"/>
-</VitisHLS:BurstInfo>
-

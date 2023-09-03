@@ -1,10 +1,0 @@
-2023-09-02T09:14:56.958308600255-09:14:56 **** Incremental Build of configuration Debug for project app ****
-000-make all 
-000-make --no-print-directory pre-build
-000-a9-linaro-pre-build-step
-000-' '
-000-make --no-print-directory main-build
-000-make[1]: Nothing to be done for 'main-build'.
-00255-
-09:14:57 Build Finished (took 506ms)
-

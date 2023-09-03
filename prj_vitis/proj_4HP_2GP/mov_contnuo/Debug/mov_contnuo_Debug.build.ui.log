@@ -1,56 +1,0 @@
-2023-09-03T16:29:52.49056400255-16:29:52 **** Incremental Build of configuration Debug for project mov_contnuo ****
-000-make all 
-000-make --no-print-directory pre-build
-000-a9-linaro-pre-build-step
-000-' '
-000-make --no-print-directory main-build
-000-'Building file: ../src/cpy_direct_multipl_contMov.cc'
-000-'Invoking: ARM v7 g++ compiler'
-000-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cpy_direct_multipl_contMov.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/ITCL_video/movDataZynq/prj_vitis/proj_4HP_2GP/platfm4hp/export/platfm4hp/sw/platfm4hp/standalone_domain/bspinclude/include -MMD -MP -MF"src/cpy_direct_multipl_contMov.d" -MT"src/cpy_direct_multipl_contMov.o" -o "src/cpy_direct_multipl_contMov.o" "../src/cpy_direct_multipl_contMov.cc"
-000-../src/cpy_direct_multipl_contMov.cc: In function 'int main()':
-000/mov_contnuo/src/cpy_direct_multipl_contMov.cc116-1-1unused variable 'GPIOPLConfigPtr' [-Wunused-variable]1-../src/cpy_direct_multipl_contMov.cc:116:25: warning: unused variable 'GPIOPLConfigPtr' [-Wunused-variable]
-000-  116 |         XGpio_Config   *GPIOPLConfigPtr;
-000-      |                         ^~~~~~~~~~~~~~~
-000/mov_contnuo/src/cpy_direct_multipl_contMov.cc121-1-1unused variable 'j' [-Wunused-variable]1-../src/cpy_direct_multipl_contMov.cc:121:16: warning: unused variable 'j' [-Wunused-variable]
-000-  121 |         u32 i, j, initTransfers;
-000-      |                ^
-000/mov_contnuo/src/cpy_direct_multipl_contMov.cc123-1-1unused variable 'cycle_ant' [-Wunused-variable]1-../src/cpy_direct_multipl_contMov.cc:123:15: warning: unused variable 'cycle_ant' [-Wunused-variable]
-000-  123 |         XTime cycle_ant, cycle, run_TimeCycles;
-000-      |               ^~~~~~~~~
-000/mov_contnuo/src/cpy_direct_multipl_contMov.cc123-1-1unused variable 'run_TimeCycles' [-Wunused-variable]1-../src/cpy_direct_multipl_contMov.cc:123:33: warning: unused variable 'run_TimeCycles' [-Wunused-variable]
-000-  123 |         XTime cycle_ant, cycle, run_TimeCycles;
-000-      |                                 ^~~~~~~~~~~~~~
-000/mov_contnuo/src/cpy_direct_multipl_contMov.cc125-1-1unused variable 'ratio_PS_PL' [-Wunused-variable]1-../src/cpy_direct_multipl_contMov.cc:125:35: warning: unused variable 'ratio_PS_PL' [-Wunused-variable]
-000-  125 |         float time_ms, fps_frame, ratio_PS_PL, freq_cycle;
-000-      |                                   ^~~~~~~~~~~
-000/mov_contnuo/src/cpy_direct_multipl_contMov.cc125-1-1unused variable 'freq_cycle' [-Wunused-variable]1-../src/cpy_direct_multipl_contMov.cc:125:48: warning: unused variable 'freq_cycle' [-Wunused-variable]
-000-  125 |         float time_ms, fps_frame, ratio_PS_PL, freq_cycle;
-000-      |                                                ^~~~~~~~~~
-000/mov_contnuo/src/cpy_direct_multipl_contMov.cc129-1-1unused variable 'col' [-Wunused-variable]1-../src/cpy_direct_multipl_contMov.cc:129:13: warning: unused variable 'col' [-Wunused-variable]
-000-  129 |         u32 col = (ACTUAL_IN_X + MARGIN);
-000-      |             ^~~
-000/mov_contnuo/src/cpy_direct_multipl_contMov.cc131-1-1unused variable 'CfgPtr0' [-Wunused-variable]1-../src/cpy_direct_multipl_contMov.cc:131:34: warning: unused variable 'CfgPtr0' [-Wunused-variable]
-000-  131 |         XWr_data_dir_adv_Config *CfgPtr0, *CfgPtr1;
-000-      |                                  ^~~~~~~
-000/mov_contnuo/src/cpy_direct_multipl_contMov.cc131-1-1unused variable 'CfgPtr1' [-Wunused-variable]1-../src/cpy_direct_multipl_contMov.cc:131:44: warning: unused variable 'CfgPtr1' [-Wunused-variable]
-000-  131 |         XWr_data_dir_adv_Config *CfgPtr0, *CfgPtr1;
-000-      |                                            ^~~~~~~
-000/mov_contnuo/src/cpy_direct_multipl_contMov.cc132-1-1unused variable 'status' [-Wunused-variable]1-../src/cpy_direct_multipl_contMov.cc:132:13: warning: unused variable 'status' [-Wunused-variable]
-000-  132 |         int status;
-000-      |             ^~~~~~
-000-'Finished building: ../src/cpy_direct_multipl_contMov.cc'
-000-' '
-000-'Building target: mov_contnuo.elf'
-000-'Invoking: ARM v7 g++ linker'
-000-arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LD:/ITCL_video/movDataZynq/prj_vitis/proj_4HP_2GP/platfm4hp/export/platfm4hp/sw/platfm4hp/standalone_domain/bsplib/lib -o "mov_contnuo.elf"  ./src/cpy_direct_multipl_contMov.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
-000-'Finished building target: mov_contnuo.elf'
-000-' '
-000-'Invoking: ARM v7 Print Size'
-000-arm-none-eabi-size mov_contnuo.elf  |tee "mov_contnuo.elf.size"
-000-   text	   data	    bss	    dec	    hex	filename
-000- 580757	   2900	  29208	 612865	  95a01	mov_contnuo.elf
-000-'Finished building: mov_contnuo.elf.size'
-000-' '
-00255-
-16:29:55 Build Finished (took 2s.759ms)
-

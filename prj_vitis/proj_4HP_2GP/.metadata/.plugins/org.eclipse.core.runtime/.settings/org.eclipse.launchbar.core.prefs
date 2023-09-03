@@ -1,9 +1,0 @@
-LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
-LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
-LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:Debugger_init_syst-Default,org.eclipse.launchbar.core.descriptorType.default\:init_syst-Borrar,org.eclipse.launchbar.core.descriptorType.default\:mov_contnuo-NoReset
-eclipse.preferences.version=1
-org.eclipse.launchbar.core.descriptorType.default\:Debugger_init_syst-Default/activeLaunchMode=run
-org.eclipse.launchbar.core.descriptorType.default\:Debugger_init_syst-Default/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
-org.eclipse.launchbar.core.descriptorType.default\:init_syst-Borrar/activeLaunchMode=embrun
-org.eclipse.launchbar.core.descriptorType.default\:mov_contnuo-NoReset/activeLaunchMode=embrun
