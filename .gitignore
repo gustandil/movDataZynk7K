@@ -1,0 +1,29 @@
+# Blacklist everything
+/*
+
+# whitelist the necessary files and folders, this gets everything from inside them too
+!.gitignore
+!README.md
+!arm_c_code/
+!arm_c_drivers/
+!hdl_src/
+!hls_src/
+!ip/
+!scrips/
+!prjs_hls/
+!prjs_vivado/
+
+#Adding ignore rules for Vivado projects
+
+
+#!prjs_vivado/ exclusions
+prj_vivado/*
+
+#!prjs_hls/ exclusions
+prj_hls/*
+
+#!No subir words
+*.docx
+
+# keep the empty folders
+!**/.keep
