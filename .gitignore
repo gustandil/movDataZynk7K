@@ -9,10 +9,11 @@
 !hdl_src/
 !hls_src/
 !ip/
-!scrips/
+!scripts/
 !prj_hls/
 !prj_vivado/
 !prj_vitis/
+!ReporteAccesoMemoria_0.1.pdf
 
 #Adding ignore rules for Vivado projects
 
