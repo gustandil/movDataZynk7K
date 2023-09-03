@@ -1,5 +1,5 @@
 # movDataZynq 7000
-Data movement analisis Zynq 7K
+Data movement analysis Zynq 7K
 
 Several codes to analize data movement in Zynq 7000
 Original (private repo) en 2020 for video movement.
