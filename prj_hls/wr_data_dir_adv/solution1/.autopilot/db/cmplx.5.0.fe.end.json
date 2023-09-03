@@ -1,0 +1,17 @@
+{
+    "0": {
+        "name": "wr_data_dir_adv",
+        "file": "wr_data_dir_adv.cpp",
+        "fileloc": "21",
+        "instructions": "95",
+        "total_instructions": "95",
+        "calls": "",
+        "basicblocks": "5",
+        "loads": {
+            "G": "2"
+        },
+        "stores": {
+            "G": "2"
+        }
+    }
+}

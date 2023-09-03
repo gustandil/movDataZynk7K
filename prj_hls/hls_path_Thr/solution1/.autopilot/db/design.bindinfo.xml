@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="data_wr_fu_242_p2" SOURCE="../hls_src/path_thr_axis.cpp:43" VARIABLE="data_wr" MODULE="path_thr_axis_Pipeline_VITIS_LOOP_31_1" LOOP="VITIS_LOOP_31_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="add_ln51_fu_248_p2" SOURCE="../hls_src/path_thr_axis.cpp:51" VARIABLE="add_ln51" MODULE="path_thr_axis_Pipeline_VITIS_LOOP_31_1" LOOP="VITIS_LOOP_31_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op select" ID="" IMPL="auto_sel" LATENCY="0" OPTYPE="select" PRAGMA="" RTLNAME="statistics" SOURCE="../hls_src/path_thr_axis.cpp:51" VARIABLE="select_ln51" MODULE="path_thr_axis_Pipeline_VITIS_LOOP_31_1" LOOP="VITIS_LOOP_31_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="adapter" DISPLAY="bind_adapter axilite" ID="" IMPL="" LATENCY="" OPTYPE="" PRAGMA="yes" RTLNAME="Axi_lite_s_axi_U" SOURCE="" VARIABLE="" MODULE="path_thr_axis" LOOP="" BUNDLEDNAME="Axi_lite" DSP="0" BRAM="0" URAM="0"/>
+</BindInfo>

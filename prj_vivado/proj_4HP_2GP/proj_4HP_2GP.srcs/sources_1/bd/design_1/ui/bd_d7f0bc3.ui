@@ -1,0 +1,33 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"2.5",
+   "Default View_TopLeft":"-399,-158",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port M00_AXI -pg 1 -lvl 3 -x 800 -y 120 -defaultsOSRD
+preplace port S_AXI_LITE -pg 1 -lvl 0 -x -10 -y 60 -defaultsOSRD
+preplace port s_axi_Axi_lite -pg 1 -lvl 0 -x -10 -y 250 -defaultsOSRD
+preplace port port-id_aresetn -pg 1 -lvl 0 -x -10 -y 130 -defaultsOSRD
+preplace port port-id_m_axi_mm2s_aclk -pg 1 -lvl 0 -x -10 -y 90 -defaultsOSRD
+preplace port port-id_mm2s_fsync -pg 1 -lvl 0 -x -10 -y 160 -defaultsOSRD
+preplace portBus mm2s_frame_ptr_in -pg 1 -lvl 0 -x -10 -y 190 -defaultsOSRD
+preplace portBus received_V -pg 1 -lvl 3 -x 800 -y 280 -defaultsOSRD
+preplace inst axi_smc_2 -pg 1 -lvl 2 -x 590 -y 120 -defaultsOSRD
+preplace inst axi_vdma_display0 -pg 1 -lvl 1 -x 210 -y 130 -defaultsOSRD
+preplace inst colector_display_0 -pg 1 -lvl 2 -x 590 -y 280 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 2 30 10 420
+preplace netloc received_V_1 1 2 1 NJ 280
+preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 0 2 20 260 430
+preplace netloc xlconstant_0_dout 1 0 1 NJ 190
+preplace netloc xlslice_bit_2_Dout 1 0 1 10J 160n
+preplace netloc axi_smc_2_M00_AXI 1 2 1 NJ 120
+preplace netloc axi_vdma_display0_M_AXIS_MM2S 1 1 1 390 120n
+preplace netloc axi_vdma_display0_M_AXI_MM2S 1 1 1 N 100
+preplace netloc ps7_0_axi_periph_M01_AXI 1 0 2 NJ 250 NJ
+preplace netloc ps7_0_axi_periph_M05_AXI 1 0 1 20J 60n
+levelinfo -pg 1 -10 210 590 800
+pagesize -pg 1 -db -bbox -sgen -210 0 960 370
+"
+}
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="wr_data_dir.cpp" path="D:\ITCL_video\movDataZynq\hls_src\wr_data_dir.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="wr_data_dir_test.cpp" path="D:\ITCL_video\movDataZynq\hls_src\wr_data_dir_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

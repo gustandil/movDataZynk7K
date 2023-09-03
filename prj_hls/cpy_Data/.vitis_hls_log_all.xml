@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Register 'next_reset' is power-on initialization." projectName="cpy_Data" solutionName="solution1" date="2023-08-30T20:50:40.809+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'numWrites' is power-on initialization." projectName="cpy_Data" solutionName="solution1" date="2023-08-30T20:50:40.787+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'max_col_counter' is power-on initialization." projectName="cpy_Data" solutionName="solution1" date="2023-08-30T20:50:40.759+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'columns_counter' is power-on initialization." projectName="cpy_Data" solutionName="solution1" date="2023-08-30T20:50:40.737+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'rows_counter' is power-on initialization." projectName="cpy_Data" solutionName="solution1" date="2023-08-30T20:50:40.720+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="cpy_Data" solutionName="solution1" date="2023-08-30T20:50:40.461+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

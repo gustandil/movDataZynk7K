@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="cpyData_copro.cpp" path="D:\ITCL_video\movDataZynq\hls_src\cpyData_copro.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="cpyData_test.cpp" path="D:\ITCL_video\movDataZynq\hls_src\cpyData_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,18 @@
+10:51:06 **** Build of configuration Debug for project inic_sys ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/cpy_direct_multipl_inic.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cpy_direct_multipl_inic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/ITCL_video/movDataZynq/prj_vitis/proj_4HP_2GP/platfm/export/platfm/sw/platfm/standalone_domain/bspinclude/include -MMD -MP -MF"src/cpy_direct_multipl_inic.d" -MT"src/cpy_direct_multipl_inic.o" -o "src/cpy_direct_multipl_inic.o" "../src/cpy_direct_multipl_inic.cc"
+../src/cpy_direct_multipl_inic.cc:23:10: fatal error: xgpio.h: No such file or directory
+   23 | #include "xgpio.h"
+      |          ^~~~~~~~~
+compilation terminated.
+make[1]: *** [src/subdir.mk:23: src/cpy_direct_multipl_inic.o] Error 1
+make: *** [makefile:46: all] Error 2
+
+10:51:12 Build Finished (took 5s.374ms)
+

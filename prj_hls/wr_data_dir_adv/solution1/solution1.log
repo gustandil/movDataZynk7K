@@ -1,0 +1,603 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.181 seconds; current allocated memory: 1.036 GB.
+INFO: [HLS 200-10] Analyzing design file '../hls_src/wr_data_dir_adv.cpp' ... 
+ERROR: [HLS 207-812] 'hls_video.h' file not found (../hls_src/wr_data_dir_adv.h:14:10)
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.443 seconds; current allocated memory: 1.895 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 6ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 6 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./wr_data_dir_adv/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name wr_data_dir_adv wr_data_dir_adv 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.3 seconds; current allocated memory: 1.025 GB.
+INFO: [HLS 200-10] Analyzing design file '../hls_src/wr_data_dir_adv.cpp' ... 
+ERROR: [HLS 207-812] 'hls_video.h' file not found (../hls_src/wr_data_dir_adv.h:14:10)
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.292 seconds; current allocated memory: 0.379 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 6ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 6 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./wr_data_dir_adv/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name wr_data_dir_adv wr_data_dir_adv 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.177 seconds; current allocated memory: 1.025 GB.
+INFO: [HLS 200-10] Analyzing design file '../hls_src/wr_data_dir_adv.cpp' ... 
+WARNING: [HLS 207-5575] '#pragma HLS loop_tripcount' can only be applied inside loop body (../hls_src/wr_data_dir_adv.cpp:61:9)
+WARNING: [HLS 207-5564] Only for/while/do loop or function body support the pipeline pragma (../hls_src/wr_data_dir_adv.cpp:62:9)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 11.223 seconds; current allocated memory: 1.027 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 's_dir' (../hls_src/wr_data_dir_adv.cpp:32:0)
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 's_data' (../hls_src/wr_data_dir_adv.cpp:32:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 10.264 seconds; current allocated memory: 1.028 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.007 seconds; current allocated memory: 1.028 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.129 seconds; current allocated memory: 1.033 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.102 seconds; current allocated memory: 1.035 GB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../hls_src/wr_data_dir_adv.cpp:64:10) to (../hls_src/wr_data_dir_adv.cpp:89:7) in function 'wr_data_dir_adv'... converting 6 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.226 seconds; current allocated memory: 1.055 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 1.055 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'wr_data_dir_adv' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'wr_data_dir_adv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln76) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.721 seconds; current allocated memory: 1.055 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.288 seconds; current allocated memory: 1.055 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'wr_data_dir_adv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/s_dir' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/s_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/base_addr_0' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/base_addr_1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/base_addr_2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/base_addr_3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/frame_ptr' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/width_img' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/total_size' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/completed' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'completed' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/processed_elem' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'wr_data_dir_adv' to 'ap_ctrl_none'.
+WARNING: [RTGEN 206-101] Register 'numWrites' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'count_frame' is power-on initialization.
+INFO: [RTGEN 206-100] Bundling port 'base_addr_0', 'base_addr_1', 'base_addr_2', 'base_addr_3', 'width_img', 'total_size' and 'processed_elem' to AXI-Lite port Axi_lite.
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_12ns_11ns_11ns_22_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'wr_data_dir_adv'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.871 seconds; current allocated memory: 1.057 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 1.878 seconds; current allocated memory: 1.064 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.335 seconds; current allocated memory: 1.070 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for wr_data_dir_adv.
+INFO: [VLOG 209-307] Generating Verilog RTL for wr_data_dir_adv.
+INFO: [HLS 200-789] **** Estimated Fmax: 264.83 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 27.514 seconds; current allocated memory: 46.137 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 6ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 6 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./wr_data_dir_adv/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name wr_data_dir_adv wr_data_dir_adv 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.153 seconds; current allocated memory: 1.026 GB.
+INFO: [HLS 200-10] Analyzing design file '../hls_src/wr_data_dir_adv.cpp' ... 
+WARNING: [HLS 207-5575] '#pragma HLS loop_tripcount' can only be applied inside loop body (../hls_src/wr_data_dir_adv.cpp:62:9)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 7.013 seconds; current allocated memory: 1.027 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 's_dir' (../hls_src/wr_data_dir_adv.cpp:32:0)
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 's_data' (../hls_src/wr_data_dir_adv.cpp:32:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.357 seconds; current allocated memory: 1.028 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 1.028 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.063 seconds; current allocated memory: 1.033 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.064 seconds; current allocated memory: 1.034 GB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../hls_src/wr_data_dir_adv.cpp:64:10) to (../hls_src/wr_data_dir_adv.cpp:89:7) in function 'wr_data_dir_adv'... converting 6 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.166 seconds; current allocated memory: 1.055 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.106 seconds; current allocated memory: 1.055 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'wr_data_dir_adv' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'wr_data_dir_adv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln76) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'wr_data_dir_adv'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, function 'wr_data_dir_adv'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.433 seconds; current allocated memory: 1.055 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.216 seconds; current allocated memory: 1.055 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'wr_data_dir_adv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/s_dir' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/s_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/base_addr_0' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/base_addr_1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/base_addr_2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/base_addr_3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/frame_ptr' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/width_img' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/total_size' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/completed' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'completed' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/processed_elem' to 's_axilite & ap_ovld' (last_write_notify).
+INFO: [RTGEN 206-500] Setting interface mode on function 'wr_data_dir_adv' to 'ap_ctrl_none'.
+WARNING: [RTGEN 206-101] Register 'numWrites' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'count_frame' is power-on initialization.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'wr_data_dir_adv' pipeline 'wr_data_dir_adv' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Bundling port 'base_addr_0', 'base_addr_1', 'base_addr_2', 'base_addr_3', 'width_img', 'total_size' and 'processed_elem' to AXI-Lite port Axi_lite.
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_12ns_11ns_11ns_22_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'wr_data_dir_adv'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.796 seconds; current allocated memory: 1.058 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.604 seconds; current allocated memory: 1.063 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.905 seconds; current allocated memory: 1.070 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for wr_data_dir_adv.
+INFO: [VLOG 209-307] Generating Verilog RTL for wr_data_dir_adv.
+INFO: [HLS 200-789] **** Estimated Fmax: 241.55 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 15.997 seconds; current allocated memory: 45.910 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 6ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 6 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./wr_data_dir_adv/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name wr_data_dir_adv wr_data_dir_adv 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.222 seconds; current allocated memory: 1.026 GB.
+INFO: [HLS 200-10] Analyzing design file '../hls_src/wr_data_dir_adv.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 10.675 seconds; current allocated memory: 1.027 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 's_dir' (../hls_src/wr_data_dir_adv.cpp:32:0)
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 's_data' (../hls_src/wr_data_dir_adv.cpp:32:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 5.05 seconds; current allocated memory: 1.028 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.005 seconds; current allocated memory: 1.028 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.072 seconds; current allocated memory: 1.033 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 1.035 GB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../hls_src/wr_data_dir_adv.cpp:63:11) to (../hls_src/wr_data_dir_adv.cpp:88:7) in function 'wr_data_dir_adv'... converting 6 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.161 seconds; current allocated memory: 1.055 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.091 seconds; current allocated memory: 1.055 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'wr_data_dir_adv' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'wr_data_dir_adv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln75) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'wr_data_dir_adv'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, function 'wr_data_dir_adv'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.433 seconds; current allocated memory: 1.055 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.219 seconds; current allocated memory: 1.055 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'wr_data_dir_adv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/s_dir' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/s_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/base_addr_0' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/base_addr_1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/base_addr_2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/base_addr_3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/frame_ptr' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/width_img' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/total_size' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/completed' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'completed' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/processed_elem' to 's_axilite & ap_ovld' (last_write_notify).
+INFO: [RTGEN 206-500] Setting interface mode on function 'wr_data_dir_adv' to 'ap_ctrl_none'.
+WARNING: [RTGEN 206-101] Register 'numWrites' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'count_frame' is power-on initialization.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'wr_data_dir_adv' pipeline 'wr_data_dir_adv' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Bundling port 'base_addr_0', 'base_addr_1', 'base_addr_2', 'base_addr_3', 'width_img', 'total_size' and 'processed_elem' to AXI-Lite port Axi_lite.
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_12ns_11ns_11ns_22_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'wr_data_dir_adv'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.805 seconds; current allocated memory: 1.058 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 4.268 seconds; current allocated memory: 1.064 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.214 seconds; current allocated memory: 1.070 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for wr_data_dir_adv.
+INFO: [VLOG 209-307] Generating Verilog RTL for wr_data_dir_adv.
+INFO: [HLS 200-789] **** Estimated Fmax: 241.55 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 24.493 seconds; current allocated memory: 45.711 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 6ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 6 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./wr_data_dir_adv/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name wr_data_dir_adv wr_data_dir_adv 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file wr_data_dir_adv/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 44.224 seconds; current allocated memory: 7.820 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 6ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.229 seconds; current allocated memory: 1.029 GB.
+INFO: [HLS 200-10] Analyzing design file '../hls_src/wr_data_dir_adv.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 15.974 seconds; current allocated memory: 1.031 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 's_dir' (../hls_src/wr_data_dir_adv.cpp:32:0)
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 's_data' (../hls_src/wr_data_dir_adv.cpp:32:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 7.121 seconds; current allocated memory: 1.032 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.005 seconds; current allocated memory: 1.032 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.104 seconds; current allocated memory: 1.037 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.067 seconds; current allocated memory: 1.038 GB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../hls_src/wr_data_dir_adv.cpp:63:11) to (../hls_src/wr_data_dir_adv.cpp:88:7) in function 'wr_data_dir_adv'... converting 6 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.216 seconds; current allocated memory: 1.059 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.126 seconds; current allocated memory: 1.059 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'wr_data_dir_adv' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'wr_data_dir_adv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln75) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'wr_data_dir_adv'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, function 'wr_data_dir_adv'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.769 seconds; current allocated memory: 1.059 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.266 seconds; current allocated memory: 1.059 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'wr_data_dir_adv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/s_dir' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/s_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/base_addr_0' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/base_addr_1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/base_addr_2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/base_addr_3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/frame_ptr' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/width_img' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/total_size' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/completed' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'completed' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/processed_elem' to 's_axilite & ap_ovld' (last_write_notify).
+INFO: [RTGEN 206-500] Setting interface mode on function 'wr_data_dir_adv' to 'ap_ctrl_none'.
+WARNING: [RTGEN 206-101] Register 'numWrites' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'count_frame' is power-on initialization.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'wr_data_dir_adv' pipeline 'wr_data_dir_adv' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Bundling port 'base_addr_0', 'base_addr_1', 'base_addr_2', 'base_addr_3', 'width_img', 'total_size' and 'processed_elem' to AXI-Lite port Axi_lite.
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_12ns_11ns_11ns_22_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'wr_data_dir_adv'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.816 seconds; current allocated memory: 1.062 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.581 seconds; current allocated memory: 1.067 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.052 seconds; current allocated memory: 1.074 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for wr_data_dir_adv.
+INFO: [VLOG 209-307] Generating Verilog RTL for wr_data_dir_adv.
+INFO: [HLS 200-789] **** Estimated Fmax: 147.49 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 29.456 seconds; current allocated memory: 46.395 MB.
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file wr_data_dir_adv/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 32.668 seconds; current allocated memory: 6.023 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 6ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 6 -name default 
+INFO: [HLS 200-1510] Running: source ./wr_data_dir_adv/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name wr_data_dir_adv wr_data_dir_adv 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.161 seconds; current allocated memory: 1.024 GB.
+INFO: [HLS 200-10] Analyzing design file '../hls_src/wr_data_dir_adv.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 7.636 seconds; current allocated memory: 1.026 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 's_dir' (../hls_src/wr_data_dir_adv.cpp:33:0)
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 's_data' (../hls_src/wr_data_dir_adv.cpp:33:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.512 seconds; current allocated memory: 1.028 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.004 seconds; current allocated memory: 1.028 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.067 seconds; current allocated memory: 1.032 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.063 seconds; current allocated memory: 1.034 GB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../hls_src/wr_data_dir_adv.cpp:64:11) to (../hls_src/wr_data_dir_adv.cpp:89:7) in function 'wr_data_dir_adv'... converting 6 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.141 seconds; current allocated memory: 1.055 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.088 seconds; current allocated memory: 1.055 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'wr_data_dir_adv' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'wr_data_dir_adv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln76) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'wr_data_dir_adv'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, function 'wr_data_dir_adv'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.406 seconds; current allocated memory: 1.055 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.2 seconds; current allocated memory: 1.055 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'wr_data_dir_adv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/s_dir' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/s_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/base_addr_0' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/base_addr_1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/base_addr_2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/base_addr_3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/frame_ptr' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/width_img' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/total_size' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/completed' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'completed' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/processed_elem' to 's_axilite & ap_ovld' (last_write_notify).
+INFO: [RTGEN 206-500] Setting interface mode on function 'wr_data_dir_adv' to 'ap_ctrl_none'.
+WARNING: [RTGEN 206-101] Register 'numWrites' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'count_frame' is power-on initialization.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'wr_data_dir_adv' pipeline 'wr_data_dir_adv' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Bundling port 'base_addr_0', 'base_addr_1', 'base_addr_2', 'base_addr_3', 'width_img', 'total_size' and 'processed_elem' to AXI-Lite port Axi_lite.
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_12ns_11ns_11ns_22_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'wr_data_dir_adv'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.612 seconds; current allocated memory: 1.057 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.74 seconds; current allocated memory: 1.063 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.963 seconds; current allocated memory: 1.069 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for wr_data_dir_adv.
+INFO: [VLOG 209-307] Generating Verilog RTL for wr_data_dir_adv.
+INFO: [HLS 200-789] **** Estimated Fmax: 241.55 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 16.721 seconds; current allocated memory: 46.328 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 6ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 6 -name default 
+INFO: [HLS 200-1510] Running: source ./wr_data_dir_adv/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name wr_data_dir_adv wr_data_dir_adv 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file wr_data_dir_adv/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 32.58 seconds; current allocated memory: 7.703 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 6ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 6 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 0.163 seconds; current allocated memory: 1.026 GB.
+INFO: [HLS 200-10] Analyzing design file '../hls_src/wr_data_dir_adv.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 7.251 seconds; current allocated memory: 1.028 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 's_dir' (../hls_src/wr_data_dir_adv.cpp:33:0)
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 's_data' (../hls_src/wr_data_dir_adv.cpp:33:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.378 seconds; current allocated memory: 1.029 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.004 seconds; current allocated memory: 1.029 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.084 seconds; current allocated memory: 1.033 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.061 seconds; current allocated memory: 1.035 GB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../hls_src/wr_data_dir_adv.cpp:64:11) to (../hls_src/wr_data_dir_adv.cpp:89:7) in function 'wr_data_dir_adv'... converting 6 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.135 seconds; current allocated memory: 1.056 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.086 seconds; current allocated memory: 1.056 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'wr_data_dir_adv' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'wr_data_dir_adv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln76) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'wr_data_dir_adv'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, function 'wr_data_dir_adv'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.442 seconds; current allocated memory: 1.056 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.221 seconds; current allocated memory: 1.056 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'wr_data_dir_adv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/strm_in_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/s_dir' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/s_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/base_addr_0' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/base_addr_1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/base_addr_2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/base_addr_3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/frame_ptr' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/width_img' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/total_size' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/completed' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'completed' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wr_data_dir_adv/processed_elem' to 's_axilite & ap_ovld' (last_write_notify).
+INFO: [RTGEN 206-500] Setting interface mode on function 'wr_data_dir_adv' to 'ap_ctrl_none'.
+WARNING: [RTGEN 206-101] Register 'numWrites' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'count_frame' is power-on initialization.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'wr_data_dir_adv' pipeline 'wr_data_dir_adv' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Bundling port 'base_addr_0', 'base_addr_1', 'base_addr_2', 'base_addr_3', 'width_img', 'total_size' and 'processed_elem' to AXI-Lite port Axi_lite.
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_12ns_11ns_11ns_22_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'wr_data_dir_adv'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.576 seconds; current allocated memory: 1.058 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.42 seconds; current allocated memory: 1.065 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.142 seconds; current allocated memory: 1.071 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for wr_data_dir_adv.
+INFO: [VLOG 209-307] Generating Verilog RTL for wr_data_dir_adv.
+INFO: [HLS 200-789] **** Estimated Fmax: 241.55 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 16.104 seconds; current allocated memory: 45.879 MB.
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file wr_data_dir_adv/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 26.438 seconds; current allocated memory: 5.973 MB.

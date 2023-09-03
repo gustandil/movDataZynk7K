@@ -1,0 +1,20 @@
+{
+  "0": {
+    "basicblocks": 6,
+    "calls": "",
+    "file": "path_thr_axis.cpp",
+    "fileloc": 16,
+    "instructions": 82,
+    "loads": {
+      "G": 1,
+      "L": 3
+    },
+    "name": "path_thr_axis",
+    "stores": {
+      "G": 2,
+      "L": 7,
+      "T": 1
+    },
+    "total_instructions": 82
+  }
+}

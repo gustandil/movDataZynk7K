@@ -1,0 +1,173 @@
+
+
+================================================================
+== Vitis HLS Report for 'path_thr_axis_Pipeline_VITIS_LOOP_31_1'
+================================================================
+* Date:           Wed Aug 30 10:22:11 2023
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        hls_path_Thr
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  4.838 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      103|      103|  1.030 us|  1.030 us|  103|  103|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_31_1  |      100|      100|         2|          1|          1|   100|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    124|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     66|    -|
+|Register         |        -|    -|      74|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|      74|    190|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |add_ln51_fu_248_p2                |         +|   0|  0|  39|          32|           1|
+    |data_wr_fu_242_p2                 |         +|   0|  0|  39|          32|          32|
+    |ap_block_state2_pp0_stage0_iter0  |       and|   0|  0|   2|           1|           1|
+    |ap_block_state3_io                |       and|   0|  0|   2|           1|           1|
+    |tmp_nbreadreq_fu_104_p9           |       and|   0|  0|   2|           1|           0|
+    |ap_block_pp0_stage0_01001         |        or|   0|  0|   2|           1|           1|
+    |ap_block_pp0_stage0_11001         |        or|   0|  0|   2|           1|           1|
+    |select_ln51_fu_254_p3             |    select|   0|  0|  32|           1|           1|
+    |ap_enable_pp0                     |       xor|   0|  0|   2|           1|           2|
+    |ap_enable_reg_pp0_iter1           |       xor|   0|  0|   2|           2|           1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |Total                             |          |   0|  0| 124|          73|          41|
+    +----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |addr_loc_0_fu_94         |   9|          2|   32|         64|
+    |ap_NS_fsm                |  25|          5|    1|          5|
+    |ap_enable_reg_pp0_iter1  |  14|          3|    1|          3|
+    |strm_in_TDATA_blk_n      |   9|          2|    1|          2|
+    |strm_out_TDATA_blk_n     |   9|          2|    1|          2|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  66|         14|   36|         76|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+----+----+-----+-----------+
+    |           Name          | FF | LUT| Bits| Const Bits|
+    +-------------------------+----+----+-----+-----------+
+    |addr_flag_0_reg_192      |   1|   0|    1|          0|
+    |addr_loc_0_fu_94         |  32|   0|   32|          0|
+    |ap_CS_fsm                |   4|   0|    4|          0|
+    |ap_enable_reg_pp0_iter0  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |   1|   0|    1|          0|
+    |data_wr_reg_289          |  32|   0|   32|          0|
+    |input_data_last_reg_284  |   1|   0|    1|          0|
+    |input_data_user_reg_279  |   1|   0|    1|          0|
+    |tmp_reg_275              |   1|   0|    1|          0|
+    +-------------------------+----+----+-----+-----------+
+    |Total                    |  74|   0|   74|          0|
+    +-------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------+-----+-----+------------+----------------------------------------+--------------+
+|        RTL Ports       | Dir | Bits|  Protocol  |              Source Object             |    C Type    |
++------------------------+-----+-----+------------+----------------------------------------+--------------+
+|ap_clk                  |   in|    1|  ap_ctrl_hs|  path_thr_axis_Pipeline_VITIS_LOOP_31_1|  return value|
+|ap_rst                  |   in|    1|  ap_ctrl_hs|  path_thr_axis_Pipeline_VITIS_LOOP_31_1|  return value|
+|ap_start                |   in|    1|  ap_ctrl_hs|  path_thr_axis_Pipeline_VITIS_LOOP_31_1|  return value|
+|ap_done                 |  out|    1|  ap_ctrl_hs|  path_thr_axis_Pipeline_VITIS_LOOP_31_1|  return value|
+|ap_idle                 |  out|    1|  ap_ctrl_hs|  path_thr_axis_Pipeline_VITIS_LOOP_31_1|  return value|
+|ap_ready                |  out|    1|  ap_ctrl_hs|  path_thr_axis_Pipeline_VITIS_LOOP_31_1|  return value|
+|addr_load               |   in|   32|     ap_none|                               addr_load|        scalar|
+|strm_in_TDATA           |   in|   64|        axis|                        strm_in_V_data_V|       pointer|
+|strm_in_TVALID          |   in|    1|        axis|                        strm_in_V_data_V|       pointer|
+|strm_in_TREADY          |  out|    1|        axis|                        strm_in_V_dest_V|       pointer|
+|strm_in_TDEST           |   in|    1|        axis|                        strm_in_V_dest_V|       pointer|
+|strm_in_TKEEP           |   in|    8|        axis|                        strm_in_V_keep_V|       pointer|
+|strm_in_TSTRB           |   in|    8|        axis|                        strm_in_V_strb_V|       pointer|
+|strm_in_TUSER           |   in|    1|        axis|                        strm_in_V_user_V|       pointer|
+|strm_in_TLAST           |   in|    1|        axis|                        strm_in_V_last_V|       pointer|
+|strm_in_TID             |   in|    1|        axis|                          strm_in_V_id_V|       pointer|
+|strm_out_TDATA          |  out|   32|        axis|                       strm_out_V_data_V|       pointer|
+|strm_out_TREADY         |   in|    1|        axis|                       strm_out_V_data_V|       pointer|
+|strm_out_TVALID         |  out|    1|        axis|                       strm_out_V_dest_V|       pointer|
+|strm_out_TDEST          |  out|    1|        axis|                       strm_out_V_dest_V|       pointer|
+|strm_out_TKEEP          |  out|    4|        axis|                       strm_out_V_keep_V|       pointer|
+|strm_out_TSTRB          |  out|    4|        axis|                       strm_out_V_strb_V|       pointer|
+|strm_out_TUSER          |  out|    1|        axis|                       strm_out_V_user_V|       pointer|
+|strm_out_TLAST          |  out|    1|        axis|                       strm_out_V_last_V|       pointer|
+|strm_out_TID            |  out|    1|        axis|                         strm_out_V_id_V|       pointer|
+|statistics              |  out|   32|      ap_vld|                              statistics|       pointer|
+|statistics_ap_vld       |  out|    1|      ap_vld|                              statistics|       pointer|
+|addr_flag_0_out         |  out|    1|      ap_vld|                         addr_flag_0_out|       pointer|
+|addr_flag_0_out_ap_vld  |  out|    1|      ap_vld|                         addr_flag_0_out|       pointer|
+|addr_loc_0_out          |  out|   32|      ap_vld|                          addr_loc_0_out|       pointer|
+|addr_loc_0_out_ap_vld   |  out|    1|      ap_vld|                          addr_loc_0_out|       pointer|
++------------------------+-----+-----+------------+----------------------------------------+--------------+
+

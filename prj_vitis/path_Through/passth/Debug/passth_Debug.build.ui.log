@@ -1,0 +1,25 @@
+2023-08-30T18:34:54.553315300255-18:34:54 **** Incremental Build of configuration Debug for project passth ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-'Building file: ../src/pathThrough.cc'
+000-'Invoking: ARM v7 g++ compiler'
+000-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pathThrough.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm2/export/platfm2/sw/platfm2/standalone_domain/bspinclude/include -MMD -MP -MF"src/pathThrough.d" -MT"src/pathThrough.o" -o "src/pathThrough.o" "../src/pathThrough.cc"
+000-'Finished building: ../src/pathThrough.cc'
+000-' '
+000-'Building target: passth.elf'
+000-'Invoking: ARM v7 g++ linker'
+000-arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LD:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm2/export/platfm2/sw/platfm2/standalone_domain/bsplib/lib -o "passth.elf"  ./src/pathThrough.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+000-'Finished building target: passth.elf'
+000-' '
+000-'Invoking: ARM v7 Print Size'
+000-arm-none-eabi-size passth.elf  |tee "passth.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000- 579057	   2860	  29152	 611069	  952fd	passth.elf
+000-'Finished building: passth.elf.size'
+000-' '
+00255-
+18:34:57 Build Finished (took 2s.779ms)
+

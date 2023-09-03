@@ -1,0 +1,394 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sat Sep  2 17:10:35 2023
+# Process ID: 13152
+# Current directory: d:/ITCL_video/movDataZynq/prj_vivado/proj_4HP/proj_4HP.runs/design_1_adapter_axi_1_0_synth_1
+# Command line: vivado.exe -log design_1_adapter_axi_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_adapter_axi_1_0.tcl
+# Log file: d:/ITCL_video/movDataZynq/prj_vivado/proj_4HP/proj_4HP.runs/design_1_adapter_axi_1_0_synth_1/design_1_adapter_axi_1_0.vds
+# Journal file: d:/ITCL_video/movDataZynq/prj_vivado/proj_4HP/proj_4HP.runs/design_1_adapter_axi_1_0_synth_1\vivado.jou
+# Running On: Fryg-X1, OS: Windows, CPU Frequency: 2208 MHz, CPU Physical cores: 6, Host memory: 68245 MB
+#-----------------------------------------------------------
+source design_1_adapter_axi_1_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1446.812 ; gain = 160.078
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/ITCL_video/movDataZynq/prj_hls'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_adapter_axi_1_0
+Command: synth_design -top design_1_adapter_axi_1_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 31400
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 2302.578 ; gain = 410.359
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_adapter_axi_1_0' [d:/ITCL_video/movDataZynq/prj_vivado/proj_4HP/proj_4HP.gen/sources_1/bd/design_1/ip/design_1_adapter_axi_1_0/synth/design_1_adapter_axi_1_0.v:53]
+INFO: [Synth 8-638] synthesizing module 'adapter_axi' [d:/ITCL_video/movDataZynq/hdl_src/adapter_axi.vhd:83]
+INFO: [Synth 8-256] done synthesizing module 'adapter_axi' (0#1) [d:/ITCL_video/movDataZynq/hdl_src/adapter_axi.vhd:83]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_adapter_axi_1_0' (0#1) [d:/ITCL_video/movDataZynq/prj_vivado/proj_4HP/proj_4HP.gen/sources_1/bd/design_1/ip/design_1_adapter_axi_1_0/synth/design_1_adapter_axi_1_0.v:53]
+WARNING: [Synth 8-7129] Port clk in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_bid[5] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_bid[4] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_bid[3] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_bid[2] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_bid[1] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_bid[0] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_bresp[1] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_bresp[0] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_bvalid in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_arready in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[31] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[30] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[29] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[28] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[27] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[26] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[25] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[24] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[23] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[22] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[21] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[20] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[19] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[18] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[17] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[16] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[15] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[14] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[13] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[12] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[11] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[10] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[9] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[8] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[7] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[6] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[5] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[4] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[3] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[2] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[1] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[0] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rresp[1] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rresp[0] in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rlast in module adapter_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rvalid in module adapter_axi is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 2398.641 ; gain = 506.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 2416.562 ; gain = 524.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 2416.562 ; gain = 524.344
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2416.562 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2444.344 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 2444.363 ; gain = 0.020
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:44 ; elapsed = 00:01:00 . Memory (MB): peak = 2444.363 ; gain = 552.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:44 ; elapsed = 00:01:00 . Memory (MB): peak = 2444.363 ; gain = 552.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:01:00 . Memory (MB): peak = 2444.363 ; gain = 552.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:44 ; elapsed = 00:01:00 . Memory (MB): peak = 2444.363 ; gain = 552.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3330] design design_1_adapter_axi_1_0 has an empty top module
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_awlen[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_awlen[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_awlen[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_awlen[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_awsize[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_awsize[1] driven by constant 1
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_awsize[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_awburst[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_awburst[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_awlock[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_awlock[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_awcache[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_awcache[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_awcache[1] driven by constant 1
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_awcache[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_awprot[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_awprot[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_awprot[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_awregion[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_awregion[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_awregion[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_awregion[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_awqos[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_awqos[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_awqos[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_awqos[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_wstrb[3] driven by constant 1
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_wstrb[2] driven by constant 1
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_wstrb[1] driven by constant 1
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_wstrb[0] driven by constant 1
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_wlast driven by constant 1
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_bready driven by constant 1
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_araddr[31] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_araddr[30] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_araddr[29] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_araddr[28] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_araddr[27] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_araddr[26] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_araddr[25] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_araddr[24] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_araddr[23] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_araddr[22] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_araddr[21] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_araddr[20] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_araddr[19] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_araddr[18] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_araddr[17] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_araddr[16] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_araddr[15] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_araddr[14] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_araddr[13] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_araddr[12] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_araddr[11] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_araddr[10] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_araddr[9] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_araddr[8] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_araddr[7] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_araddr[6] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_araddr[5] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_araddr[4] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_araddr[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_araddr[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_araddr[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_araddr[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_arlen[4] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_arlen[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_arlen[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_arlen[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_arlen[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_arsize[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_arsize[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_arsize[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_arburst[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_arburst[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_arlock[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_arlock[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_arcache[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_arcache[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_arcache[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_arcache[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_arprot[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_arprot[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_arprot[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_arregion[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_arregion[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_arregion[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_arregion[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_arqos[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_arqos[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_arqos[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_arqos[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_arvalid driven by constant 0
+INFO: [Synth 8-3917] design design_1_adapter_axi_1_0 has port out_mm_rready driven by constant 0
+WARNING: [Synth 8-7129] Port clk in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_bid[5] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_bid[4] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_bid[3] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_bid[2] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_bid[1] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_bid[0] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_bresp[1] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_bresp[0] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_bvalid in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_arready in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[31] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[30] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[29] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[28] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[27] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[26] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[25] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[24] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[23] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[22] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[21] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[20] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[19] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[18] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[17] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[16] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[15] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[14] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[13] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[12] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[11] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[10] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[9] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[8] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[7] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[6] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[5] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[4] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[3] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[2] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[1] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rdata[0] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rresp[1] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rresp[0] in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rlast in module design_1_adapter_axi_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_mm_rvalid in module design_1_adapter_axi_1_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:01:08 . Memory (MB): peak = 2444.363 ; gain = 552.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:08 ; elapsed = 00:01:32 . Memory (MB): peak = 2444.363 ; gain = 552.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:08 ; elapsed = 00:01:32 . Memory (MB): peak = 2444.363 ; gain = 552.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:08 ; elapsed = 00:01:32 . Memory (MB): peak = 2444.363 ; gain = 552.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:22 ; elapsed = 00:01:51 . Memory (MB): peak = 2444.363 ; gain = 552.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:22 ; elapsed = 00:01:51 . Memory (MB): peak = 2444.363 ; gain = 552.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:22 ; elapsed = 00:01:51 . Memory (MB): peak = 2444.363 ; gain = 552.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:22 ; elapsed = 00:01:51 . Memory (MB): peak = 2444.363 ; gain = 552.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:22 ; elapsed = 00:01:51 . Memory (MB): peak = 2444.363 ; gain = 552.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:22 ; elapsed = 00:01:51 . Memory (MB): peak = 2444.363 ; gain = 552.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:22 ; elapsed = 00:01:51 . Memory (MB): peak = 2444.363 ; gain = 552.145
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 49 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:56 ; elapsed = 00:01:44 . Memory (MB): peak = 2444.363 ; gain = 524.344
+Synthesis Optimization Complete : Time (s): cpu = 00:01:22 ; elapsed = 00:01:51 . Memory (MB): peak = 2444.363 ; gain = 552.145
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2444.363 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2444.363 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 8cc3decb
+INFO: [Common 17-83] Releasing license: Synthesis
+114 Infos, 96 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:31 ; elapsed = 00:02:43 . Memory (MB): peak = 2444.363 ; gain = 956.836
+INFO: [Common 17-1381] The checkpoint 'd:/ITCL_video/movDataZynq/prj_vivado/proj_4HP/proj_4HP.runs/design_1_adapter_axi_1_0_synth_1/design_1_adapter_axi_1_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_adapter_axi_1_0, cache-ID = 5f709df7e77c4652
+INFO: [Common 17-1381] The checkpoint 'd:/ITCL_video/movDataZynq/prj_vivado/proj_4HP/proj_4HP.runs/design_1_adapter_axi_1_0_synth_1/design_1_adapter_axi_1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_adapter_axi_1_0_utilization_synth.rpt -pb design_1_adapter_axi_1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Sep  2 17:14:16 2023...

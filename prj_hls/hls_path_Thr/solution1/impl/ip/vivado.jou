@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Wed Aug 30 10:22:53 2023
+# Process ID: 22776
+# Current directory: D:/ITCL_video/movDataZynq/prj_hls/hls_path_Thr/solution1/impl/ip
+# Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file: D:/ITCL_video/movDataZynq/prj_hls/hls_path_Thr/solution1/impl/ip/vivado.log
+# Journal file: D:/ITCL_video/movDataZynq/prj_hls/hls_path_Thr/solution1/impl/ip\vivado.jou
+# Running On: Fryg-X1, OS: Windows, CPU Frequency: 2208 MHz, CPU Physical cores: 6, Host memory: 68245 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

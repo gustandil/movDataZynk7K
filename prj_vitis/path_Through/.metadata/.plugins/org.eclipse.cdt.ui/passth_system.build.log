@@ -1,0 +1,10 @@
+18:30:24 **** Build of configuration Debug for project passth_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 13577 D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm2/export/platfm2/platfm2.xpfm standalone_domain D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth_system/Debug/system.bif
+sdcard_gen --xpfm D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm2/export/platfm2/platfm2.xpfm --sys_config platfm2 --bif D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth_system/Debug/system.bif --bitstream D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth/_ide/bitstream/design_1_wrapper.bit --elf D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth/Debug/passth.elf,ps7_cortexa9_0
+creating BOOT.BIN using D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth/_ide/bitstream/design_1_wrapper.bit
+Running C:/Xilinx/Vitis/2023.1/bin/bootgen  -image D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+18:30:35 Build Finished (took 11s.215ms)
+

@@ -1,0 +1,28 @@
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: ../hls_src/path_thr_axis.cpp, Line: 31, Column: 19 }
+Function:        _Z13path_thr_axisRN3hls6streamINS_4axisI7ap_uintILi64EELm1ELm1ELm1EEELi0EEERNS0_INS1_IS2_ILi32EELm1ELm1ELm1EEELi0EEERj
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_31_1
+  - String:          ' '
+  - LoopLoc:         '../hls_src/path_thr_axis.cpp:31:19'
+  - String:          ' '
+  - Function:        'path_thr_axis(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul>, 0>&, unsigned int&)'
+    DebugLoc:        { File: ../hls_src/path_thr_axis.cpp, Line: 19, Column: 0 }
+  - String:          ' '
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: ../hls_src/path_thr_axis.cpp, Line: 31, Column: 19 }
+Function:        _Z13path_thr_axisRN3hls6streamINS_4axisI7ap_uintILi64EELm1ELm1ELm1EEELi0EEERNS0_INS1_IS2_ILi32EELm1ELm1ELm1EEELi0EEERj
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_31_1
+  - String:          '''('
+  - LoopLoc:         '../hls_src/path_thr_axis.cpp:31:19'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...

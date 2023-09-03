@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "wr_data_dir_adv",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "wr_data_dir_adv"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "D:/ITCL_video/movDataZynq/scripts/wr_data_dir_adv_hls_script.tcl",
+    "sourceLine": 18,
+    "success": true
+  }
+]

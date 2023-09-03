@@ -1,0 +1,185 @@
+
+
+================================================================
+== Vitis HLS Report for 'colector_display'
+================================================================
+* Date:           Sat Sep  2 15:37:35 2023
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        collector_display
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  7.00 ns|  6.072 ns|     1.89 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        1|        1|  7.000 ns|  7.000 ns|    1|    1|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    306|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        0|    -|     214|    360|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|    116|    -|
+|Register         |        -|    -|     282|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|     496|    782|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|      1|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +------------------+----------------+---------+----+-----+-----+-----+
+    |     Instance     |     Module     | BRAM_18K| DSP|  FF | LUT | URAM|
+    +------------------+----------------+---------+----+-----+-----+-----+
+    |Axi_lite_s_axi_U  |Axi_lite_s_axi  |        0|   0|  214|  360|    0|
+    +------------------+----------------+---------+----+-----+-----+-----+
+    |Total             |                |        0|   0|  214|  360|    0|
+    +------------------+----------------+---------+----+-----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |add_ln61_fu_354_p2                |         +|   0|  0|  13|          10|           1|
+    |add_ln65_fu_274_p2                |         +|   0|  0|  12|          11|           1|
+    |add_ln70_1_fu_322_p2              |         +|   0|  0|  40|          33|          33|
+    |add_ln70_fu_332_p2                |         +|   0|  0|  71|          64|          64|
+    |add_ln76_fu_393_p2                |         +|   0|  0|  39|          32|           1|
+    |add_ln78_fu_381_p2                |         +|   0|  0|  39|          32|           1|
+    |phitmp_fu_281_p2                  |         +|   0|  0|  39|          32|           1|
+    |ap_block_pp0_stage0_01001         |       and|   0|  0|   2|           1|           1|
+    |ap_block_state1_pp0_stage0_iter0  |       and|   0|  0|   2|           1|           1|
+    |ap_condition_128                  |       and|   0|  0|   2|           1|           1|
+    |ap_condition_360                  |       and|   0|  0|   2|           1|           1|
+    |ap_condition_363                  |       and|   0|  0|   2|           1|           1|
+    |tmp_nbreadreq_fu_112_p9           |       and|   0|  0|   2|           1|           0|
+    |icmp_ln75_fu_366_p2               |      icmp|   0|  0|  39|          32|          32|
+    |ap_enable_pp0                     |       xor|   0|  0|   2|           1|           2|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |Total                             |          |   0|  0| 306|         253|         141|
+    +----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------------------+----+-----------+-----+-----------+
+    |                   Name                  | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------------------+----+-----------+-----+-----------+
+    |ap_phi_mux_accum_loc_0_phi_fu_220_p4     |  14|          3|   64|        192|
+    |ap_phi_mux_image_ok_loc_0_phi_fu_230_p4  |  14|          3|   32|         96|
+    |ap_phi_mux_phi_ln72_phi_fu_209_p4        |  14|          3|   32|         96|
+    |ap_phi_mux_storemerge1_phi_fu_240_p4     |  14|          3|    1|          3|
+    |ap_phi_mux_storemerge3_phi_fu_197_p4     |  14|          3|   11|         33|
+    |ap_phi_mux_storemerge_phi_fu_187_p4      |  14|          3|   11|         33|
+    |phi_ln72_reg_205                         |  14|          3|   32|         96|
+    |rows_counter                             |   9|          2|   10|         20|
+    |strm_in_TDATA_blk_n                      |   9|          2|    1|          2|
+    +-----------------------------------------+----+-----------+-----+-----------+
+    |Total                                    | 116|         25|  194|        571|
+    +-----------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+----+----+-----+-----------+
+    |           Name          | FF | LUT| Bits| Const Bits|
+    +-------------------------+----+----+-----+-----------+
+    |accum                    |  64|   0|   64|          0|
+    |add_ln70_reg_418         |  64|   0|   64|          0|
+    |ap_CS_fsm                |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |   1|   0|    1|          0|
+    |columns_counter          |  11|   0|   11|          0|
+    |image_ok                 |  32|   0|   32|          0|
+    |image_wr                 |  32|   0|   32|          0|
+    |input_data_last_reg_414  |   1|   0|    1|          0|
+    |input_data_user_reg_410  |   1|   0|    1|          0|
+    |numWrites                |  32|   0|   32|          0|
+    |phi_ln72_reg_205         |  32|   0|   32|          0|
+    |rows_counter             |  10|   0|   10|          0|
+    |tmp_reg_406              |   1|   0|    1|          0|
+    +-------------------------+----+----+-----+-----------+
+    |Total                    | 282|   0|  282|          0|
+    +-------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------+-----+-----+--------------+------------------+--------------+
+|        RTL Ports       | Dir | Bits|   Protocol   |   Source Object  |    C Type    |
++------------------------+-----+-----+--------------+------------------+--------------+
+|s_axi_Axi_lite_AWVALID  |   in|    1|         s_axi|          Axi_lite|       pointer|
+|s_axi_Axi_lite_AWREADY  |  out|    1|         s_axi|          Axi_lite|       pointer|
+|s_axi_Axi_lite_AWADDR   |   in|    7|         s_axi|          Axi_lite|       pointer|
+|s_axi_Axi_lite_WVALID   |   in|    1|         s_axi|          Axi_lite|       pointer|
+|s_axi_Axi_lite_WREADY   |  out|    1|         s_axi|          Axi_lite|       pointer|
+|s_axi_Axi_lite_WDATA    |   in|   32|         s_axi|          Axi_lite|       pointer|
+|s_axi_Axi_lite_WSTRB    |   in|    4|         s_axi|          Axi_lite|       pointer|
+|s_axi_Axi_lite_ARVALID  |   in|    1|         s_axi|          Axi_lite|       pointer|
+|s_axi_Axi_lite_ARREADY  |  out|    1|         s_axi|          Axi_lite|       pointer|
+|s_axi_Axi_lite_ARADDR   |   in|    7|         s_axi|          Axi_lite|       pointer|
+|s_axi_Axi_lite_RVALID   |  out|    1|         s_axi|          Axi_lite|       pointer|
+|s_axi_Axi_lite_RREADY   |   in|    1|         s_axi|          Axi_lite|       pointer|
+|s_axi_Axi_lite_RDATA    |  out|   32|         s_axi|          Axi_lite|       pointer|
+|s_axi_Axi_lite_RRESP    |  out|    2|         s_axi|          Axi_lite|       pointer|
+|s_axi_Axi_lite_BVALID   |  out|    1|         s_axi|          Axi_lite|       pointer|
+|s_axi_Axi_lite_BREADY   |   in|    1|         s_axi|          Axi_lite|       pointer|
+|s_axi_Axi_lite_BRESP    |  out|    2|         s_axi|          Axi_lite|       pointer|
+|ap_clk                  |   in|    1|  ap_ctrl_none|  colector_display|  return value|
+|ap_rst_n                |   in|    1|  ap_ctrl_none|  colector_display|  return value|
+|strm_in_TDATA           |   in|   64|          axis|  strm_in_V_data_V|       pointer|
+|strm_in_TVALID          |   in|    1|          axis|  strm_in_V_dest_V|       pointer|
+|strm_in_TREADY          |  out|    1|          axis|  strm_in_V_dest_V|       pointer|
+|strm_in_TDEST           |   in|    1|          axis|  strm_in_V_dest_V|       pointer|
+|strm_in_TKEEP           |   in|    8|          axis|  strm_in_V_keep_V|       pointer|
+|strm_in_TSTRB           |   in|    8|          axis|  strm_in_V_strb_V|       pointer|
+|strm_in_TUSER           |   in|    1|          axis|  strm_in_V_user_V|       pointer|
+|strm_in_TLAST           |   in|    1|          axis|  strm_in_V_last_V|       pointer|
+|strm_in_TID             |   in|    1|          axis|    strm_in_V_id_V|       pointer|
+|received                |  out|    1|       ap_none|          received|       pointer|
++------------------------+-----+-----+--------------+------------------+--------------+
+

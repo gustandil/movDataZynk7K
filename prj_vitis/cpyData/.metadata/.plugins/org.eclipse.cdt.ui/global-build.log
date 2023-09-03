@@ -1,0 +1,37 @@
+Nothing to build in platform 'platf'
+
+09:52:59 **** Incremental Build of configuration Debug for project app ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/cpyData_axi_master.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cpyData_axi_master.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/ITCL_video/movDataZynq/prj_vitis/cpyData/platf/export/platf/sw/platf/standalone_domain/bspinclude/include -MMD -MP -MF"src/cpyData_axi_master.d" -MT"src/cpyData_axi_master.o" -o "src/cpyData_axi_master.o" "../src/cpyData_axi_master.cc"
+../src/cpyData_axi_master.cc: In function 'int main()':
+../src/cpyData_axi_master.cc:148:24: warning: comparison of integer expressions of different signedness: 'int' and 'uint' {aka 'unsigned int'} [-Wsign-compare]
+  148 |         if (statistics >= numWrites) statistics = 0;
+      |             ~~~~~~~~~~~^~~~~~~~~~~~
+../src/cpyData_axi_master.cc:150:27: warning: comparison of integer expressions of different signedness: 'int' and 'uint' {aka 'unsigned int'} [-Wsign-compare]
+  150 |         while (statistics < numWrites){
+      |                ~~~~~~~~~~~^~~~~~~~~~~
+../src/cpyData_axi_master.cc:79:13: warning: unused variable 'row' [-Wunused-variable]
+   79 |         u32 row = ACTUAL_IN_Y;
+      |             ^~~
+../src/cpyData_axi_master.cc:81:13: warning: unused variable 'modeWork' [-Wunused-variable]
+   81 |         u32 modeWork = 0;
+      |             ^~~~~~~~
+'Finished building: ../src/cpyData_axi_master.cc'
+' '
+'Building target: app.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LD:/ITCL_video/movDataZynq/prj_vitis/cpyData/platf/export/platf/sw/platf/standalone_domain/bsplib/lib -o "app.elf"  ./src/cpyData_axi_master.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size app.elf  |tee "app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 581513	   2884	  29160	 613557	  95cb5	app.elf
+'Finished building: app.elf.size'
+' '

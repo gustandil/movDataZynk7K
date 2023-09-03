@@ -1,0 +1,25 @@
+2023-09-01T21:46:55.757022800255-21:46:55 **** Incremental Build of configuration Debug for project app ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-'Building file: ../src/cpyData_direct.cc'
+000-'Invoking: ARM v7 g++ compiler'
+000-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cpyData_direct.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/ITCL_video/movDataZynq/prj_vitis/Wr_direct/platfm/export/platfm/sw/platfm/standalone_domain/bspinclude/include -MMD -MP -MF"src/cpyData_direct.d" -MT"src/cpyData_direct.o" -o "src/cpyData_direct.o" "../src/cpyData_direct.cc"
+000-'Finished building: ../src/cpyData_direct.cc'
+000-' '
+000-'Building target: app.elf'
+000-'Invoking: ARM v7 g++ linker'
+000-arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LD:/ITCL_video/movDataZynq/prj_vitis/Wr_direct/platfm/export/platfm/sw/platfm/standalone_domain/bsplib/lib -o "app.elf"  ./src/cpyData_direct.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+000-'Finished building target: app.elf'
+000-' '
+000-'Invoking: ARM v7 Print Size'
+000-arm-none-eabi-size app.elf  |tee "app.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000- 581653	   2876	132739560	133324089	7f25d39	app.elf
+000-'Finished building: app.elf.size'
+000-' '
+00255-
+21:46:58 Build Finished (took 2s.330ms)
+

@@ -1,0 +1,25 @@
+D:\ITCL_video\movDataZynq\prj_hls\wr_data_dir\solution1\.autopilot\db\wr_data_dir.pp.0.cpp:5577:7: warning: Added loop label VITIS_LOOP_1213_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1213_1: 
+D:\ITCL_video\movDataZynq\prj_hls\wr_data_dir\solution1\.autopilot\db\wr_data_dir.pp.0.cpp:5577:7: note: FIX-IT applied suggested code changes
+D:\ITCL_video\movDataZynq\prj_hls\wr_data_dir\solution1\.autopilot\db\wr_data_dir.pp.0.cpp:6551:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+D:\ITCL_video\movDataZynq\prj_hls\wr_data_dir\solution1\.autopilot\db\wr_data_dir.pp.0.cpp:6551:5: note: FIX-IT applied suggested code changes
+D:\ITCL_video\movDataZynq\prj_hls\wr_data_dir\solution1\.autopilot\db\wr_data_dir.pp.0.cpp:6565:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+D:\ITCL_video\movDataZynq\prj_hls\wr_data_dir\solution1\.autopilot\db\wr_data_dir.pp.0.cpp:6565:5: note: FIX-IT applied suggested code changes
+D:\ITCL_video\movDataZynq\prj_hls\wr_data_dir\solution1\.autopilot\db\wr_data_dir.pp.0.cpp:6579:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+D:\ITCL_video\movDataZynq\prj_hls\wr_data_dir\solution1\.autopilot\db\wr_data_dir.pp.0.cpp:6579:5: note: FIX-IT applied suggested code changes
+D:\ITCL_video\movDataZynq\prj_hls\wr_data_dir\solution1\.autopilot\db\wr_data_dir.pp.0.cpp:8190:7: warning: Added loop label VITIS_LOOP_1247_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1247_1: 
+D:\ITCL_video\movDataZynq\prj_hls\wr_data_dir\solution1\.autopilot\db\wr_data_dir.pp.0.cpp:8190:7: note: FIX-IT applied suggested code changes

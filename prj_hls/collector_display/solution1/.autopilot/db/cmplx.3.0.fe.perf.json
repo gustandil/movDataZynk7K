@@ -1,0 +1,19 @@
+{
+  "0": {
+    "basicblocks": 12,
+    "calls": "",
+    "file": "collector_display.cpp",
+    "fileloc": 20,
+    "instructions": 85,
+    "loads": {
+      "G": 7,
+      "L": 3
+    },
+    "name": "colector_display",
+    "stores": {
+      "G": 11,
+      "T": 5
+    },
+    "total_instructions": 85
+  }
+}

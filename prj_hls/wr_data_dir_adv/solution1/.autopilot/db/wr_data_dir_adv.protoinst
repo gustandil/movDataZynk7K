@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"wr_data_dir_adv": {
+			"proto_instances": {
+			}
+		}
+	}
+}

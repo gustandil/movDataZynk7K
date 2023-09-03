@@ -1,0 +1,7 @@
+/*platf*/
+the_ROM_image:
+{
+  [bootloader]<platf/boot/fsbl.elf>
+   <bitstream> 
+  <elf,ps7_cortexa9_0>
+}

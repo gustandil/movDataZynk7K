@@ -1,0 +1,470 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.181 seconds; current allocated memory: 1.028 GB.
+INFO: [HLS 200-10] Analyzing design file '../hls_src/cpyData_copro.cpp' ... 
+ERROR: [HLS 207-812] 'hls_video.h' file not found (../hls_src/cpyData.h:14:10)
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.106 seconds; current allocated memory: 2.059 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 6ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 6 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./cpy_Data/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name cpyData_copro cpyData_copro 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.218 seconds; current allocated memory: 1.025 GB.
+INFO: [HLS 200-10] Analyzing design file '../hls_src/cpyData_copro.cpp' ... 
+ERROR: [HLS 207-812] 'hls_video.h' file not found (../hls_src/cpyData.h:14:10)
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.808 seconds; current allocated memory: 0.496 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 6ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 6 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./cpy_Data/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name cpyData_copro cpyData_copro 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.167 seconds; current allocated memory: 1.025 GB.
+INFO: [HLS 200-10] Analyzing design file '../hls_src/cpyData_copro.cpp' ... 
+WARNING: [HLS 207-5564] Only for/while/do loop or function body support the pipeline pragma (../hls_src/cpyData_copro.cpp:52:9)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 6.523 seconds; current allocated memory: 1.027 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.319 seconds; current allocated memory: 1.028 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 1.028 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.054 seconds; current allocated memory: 1.033 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.045 seconds; current allocated memory: 1.034 GB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.105 seconds; current allocated memory: 1.055 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.071 seconds; current allocated memory: 1.055 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'cpyData_copro' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'cpyData_copro' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln87) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.401 seconds; current allocated memory: 1.055 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.315 seconds; current allocated memory: 1.055 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'cpyData_copro' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/memWR' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/strm_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/strm_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/strm_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/strm_in_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/strm_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/strm_in_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/strm_in_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/memW' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/width_img' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/rows_count' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/cols_count' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/maxcol_cnt' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/statistics' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'cpyData_copro' to 'ap_ctrl_none'.
+WARNING: [RTGEN 206-101] Register 'rows_counter' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'max_col_counter' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'numWrites' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'columns_counter' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'next_reset' is power-on initialization.
+INFO: [RTGEN 206-100] Bundling port 'width_img', 'rows_count', 'cols_count', 'maxcol_cnt' and 'statistics' to AXI-Lite port Axi_lite.
+INFO: [RTGEN 206-100] Bundling port 'memW' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_12ns_11ns_11ns_23_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cpyData_copro'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.714 seconds; current allocated memory: 1.058 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.727 seconds; current allocated memory: 1.064 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.294 seconds; current allocated memory: 1.072 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for cpyData_copro.
+INFO: [VLOG 209-307] Generating Verilog RTL for cpyData_copro.
+INFO: [HLS 200-789] **** Estimated Fmax: 228.31 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 15.814 seconds; current allocated memory: 47.684 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 6ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 6 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./cpy_Data/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name cpyData_copro cpyData_copro 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.176 seconds; current allocated memory: 1.026 GB.
+INFO: [HLS 200-10] Analyzing design file '../hls_src/cpyData_copro.cpp' ... 
+WARNING: [HLS 207-5564] Only for/while/do loop or function body support the pipeline pragma (../hls_src/cpyData_copro.cpp:52:9)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 6.618 seconds; current allocated memory: 1.027 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.368 seconds; current allocated memory: 1.028 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 1.028 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.047 seconds; current allocated memory: 1.033 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.041 seconds; current allocated memory: 1.034 GB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.093 seconds; current allocated memory: 1.055 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.068 seconds; current allocated memory: 1.055 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'cpyData_copro' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'cpyData_copro' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln87) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.323 seconds; current allocated memory: 1.055 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.313 seconds; current allocated memory: 1.055 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'cpyData_copro' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/memWR' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/strm_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/strm_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/strm_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/strm_in_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/strm_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/strm_in_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/strm_in_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/memW' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/width_img' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/rows_count' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/cols_count' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/maxcol_cnt' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/statistics' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'cpyData_copro' to 'ap_ctrl_none'.
+WARNING: [RTGEN 206-101] Register 'rows_counter' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'max_col_counter' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'numWrites' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'columns_counter' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'next_reset' is power-on initialization.
+INFO: [RTGEN 206-100] Bundling port 'width_img', 'rows_count', 'cols_count', 'maxcol_cnt' and 'statistics' to AXI-Lite port Axi_lite.
+INFO: [RTGEN 206-100] Bundling port 'memW' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_12ns_11ns_11ns_23_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cpyData_copro'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.638 seconds; current allocated memory: 1.058 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.511 seconds; current allocated memory: 1.065 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.237 seconds; current allocated memory: 1.072 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for cpyData_copro.
+INFO: [VLOG 209-307] Generating Verilog RTL for cpyData_copro.
+INFO: [HLS 200-789] **** Estimated Fmax: 228.31 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 15.512 seconds; current allocated memory: 47.094 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 6ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 6 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./cpy_Data/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name cpyData_copro cpyData_copro 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.162 seconds; current allocated memory: 1.025 GB.
+INFO: [HLS 200-10] Analyzing design file '../hls_src/cpyData_copro.cpp' ... 
+WARNING: [HLS 207-5564] Only for/while/do loop or function body support the pipeline pragma (../hls_src/cpyData_copro.cpp:53:9)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 6.577 seconds; current allocated memory: 1.027 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.184 seconds; current allocated memory: 1.028 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 1.028 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.049 seconds; current allocated memory: 1.033 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.042 seconds; current allocated memory: 1.034 GB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.094 seconds; current allocated memory: 1.055 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.069 seconds; current allocated memory: 1.055 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'cpyData_copro' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'cpyData_copro' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln88) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.354 seconds; current allocated memory: 1.055 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.307 seconds; current allocated memory: 1.055 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'cpyData_copro' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/memWR' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/strm_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/strm_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/strm_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/strm_in_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/strm_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/strm_in_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/strm_in_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/memW' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/width_img' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/rows_count' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/cols_count' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/maxcol_cnt' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/statistics' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'cpyData_copro' to 'ap_ctrl_none'.
+WARNING: [RTGEN 206-101] Register 'rows_counter' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'max_col_counter' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'numWrites' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'columns_counter' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'next_reset' is power-on initialization.
+INFO: [RTGEN 206-100] Bundling port 'width_img', 'rows_count', 'cols_count', 'maxcol_cnt' and 'statistics' to AXI-Lite port Axi_lite.
+INFO: [RTGEN 206-100] Bundling port 'memW' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_12ns_11ns_11ns_23_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cpyData_copro'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.542 seconds; current allocated memory: 1.058 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.281 seconds; current allocated memory: 1.064 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 1.175 seconds; current allocated memory: 1.072 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for cpyData_copro.
+INFO: [VLOG 209-307] Generating Verilog RTL for cpyData_copro.
+INFO: [HLS 200-789] **** Estimated Fmax: 228.31 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 14.912 seconds; current allocated memory: 47.664 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 6ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 6 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./cpy_Data/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name cpyData_copro cpyData_copro 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.152 seconds; current allocated memory: 1.032 GB.
+INFO: [HLS 200-10] Analyzing design file '../hls_src/cpyData_copro.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 6.309 seconds; current allocated memory: 1.033 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.177 seconds; current allocated memory: 1.034 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 1.034 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.052 seconds; current allocated memory: 1.039 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.042 seconds; current allocated memory: 1.041 GB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.096 seconds; current allocated memory: 1.061 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.065 seconds; current allocated memory: 1.061 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'cpyData_copro' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'cpyData_copro' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln87) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'cpyData_copro'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 12, function 'cpyData_copro'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.351 seconds; current allocated memory: 1.061 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.259 seconds; current allocated memory: 1.062 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'cpyData_copro' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/memWR' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/strm_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/strm_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/strm_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/strm_in_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/strm_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/strm_in_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/strm_in_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/memW' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/width_img' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/rows_count' to 's_axilite & ap_ovld' (last_write_notify).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/cols_count' to 's_axilite & ap_ovld' (last_write_notify).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/maxcol_cnt' to 's_axilite & ap_ovld' (last_write_notify).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/statistics' to 's_axilite & ap_ovld' (last_write_notify).
+INFO: [RTGEN 206-500] Setting interface mode on function 'cpyData_copro' to 'ap_ctrl_none'.
+WARNING: [RTGEN 206-101] Register 'rows_counter' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'columns_counter' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'max_col_counter' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'numWrites' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'next_reset' is power-on initialization.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'cpyData_copro' pipeline 'cpyData_copro' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Bundling port 'width_img', 'rows_count', 'cols_count', 'maxcol_cnt' and 'statistics' to AXI-Lite port Axi_lite.
+INFO: [RTGEN 206-100] Bundling port 'memW' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_12ns_11ns_11ns_23_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cpyData_copro'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.664 seconds; current allocated memory: 1.065 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.805 seconds; current allocated memory: 1.072 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.101 seconds; current allocated memory: 1.078 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for cpyData_copro.
+INFO: [VLOG 209-307] Generating Verilog RTL for cpyData_copro.
+INFO: [HLS 200-789] **** Estimated Fmax: 228.31 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 15.149 seconds; current allocated memory: 47.953 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 6ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 6 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./cpy_Data/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name cpyData_copro cpyData_copro 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.187 seconds; current allocated memory: 1.026 GB.
+INFO: [HLS 200-10] Analyzing design file '../hls_src/cpyData_copro.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 7.586 seconds; current allocated memory: 1.027 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.115 seconds; current allocated memory: 1.028 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 1.028 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.047 seconds; current allocated memory: 1.033 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.039 seconds; current allocated memory: 1.034 GB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.098 seconds; current allocated memory: 1.055 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.076 seconds; current allocated memory: 1.055 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'cpyData_copro' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'cpyData_copro' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln86) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'cpyData_copro'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 12, function 'cpyData_copro'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.413 seconds; current allocated memory: 1.055 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.308 seconds; current allocated memory: 1.055 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'cpyData_copro' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/memWR' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/strm_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/strm_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/strm_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/strm_in_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/strm_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/strm_in_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/strm_in_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/memW' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/width_img' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/rows_count' to 's_axilite & ap_ovld' (last_write_notify).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/cols_count' to 's_axilite & ap_ovld' (last_write_notify).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/maxcol_cnt' to 's_axilite & ap_ovld' (last_write_notify).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cpyData_copro/statistics' to 's_axilite & ap_ovld' (last_write_notify).
+INFO: [RTGEN 206-500] Setting interface mode on function 'cpyData_copro' to 'ap_ctrl_none'.
+WARNING: [RTGEN 206-101] Register 'rows_counter' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'columns_counter' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'max_col_counter' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'numWrites' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'next_reset' is power-on initialization.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'cpyData_copro' pipeline 'cpyData_copro' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Bundling port 'width_img', 'rows_count', 'cols_count', 'maxcol_cnt' and 'statistics' to AXI-Lite port Axi_lite.
+INFO: [RTGEN 206-100] Bundling port 'memW' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_12ns_11ns_11ns_23_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cpyData_copro'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.637 seconds; current allocated memory: 1.059 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.816 seconds; current allocated memory: 1.065 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.147 seconds; current allocated memory: 1.072 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for cpyData_copro.
+INFO: [VLOG 209-307] Generating Verilog RTL for cpyData_copro.
+INFO: [HLS 200-789] **** Estimated Fmax: 228.31 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 16.545 seconds; current allocated memory: 47.598 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+Tool Version Limit: 2023.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 6ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 6 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./cpy_Data/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name cpyData_copro cpyData_copro 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file cpy_Data/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 33.738 seconds; current allocated memory: 8.605 MB.

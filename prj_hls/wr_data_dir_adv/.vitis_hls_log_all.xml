@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Register 'count_frame' is power-on initialization." projectName="wr_data_dir_adv" solutionName="solution1" date="2023-09-02T13:37:03.123+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'numWrites' is power-on initialization." projectName="wr_data_dir_adv" solutionName="solution1" date="2023-09-02T13:37:03.090+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'completed' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="wr_data_dir_adv" solutionName="solution1" date="2023-09-02T13:37:03.026+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="wr_data_dir_adv" solutionName="solution1" date="2023-09-02T13:37:02.719+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 's_data' (../hls_src/wr_data_dir_adv.cpp:33:0)&#xD;&#xA;Resolution: For help on HLS 214-142 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=214-142.html" projectName="wr_data_dir_adv" solutionName="solution1" date="2023-09-02T13:37:01.583+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 's_dir' (../hls_src/wr_data_dir_adv.cpp:33:0)&#xD;&#xA;Resolution: For help on HLS 214-142 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=214-142.html" projectName="wr_data_dir_adv" solutionName="solution1" date="2023-09-02T13:37:01.567+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

@@ -1,0 +1,38 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"2.5",
+   "Default View_TopLeft":"-402,-76",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port S_AXIS -pg 1 -lvl 3 -x 750 -y 200 -defaultsOSRD
+preplace port S_AXIS1 -pg 1 -lvl 3 -x 750 -y 140 -defaultsOSRD
+preplace port out_mm -pg 1 -lvl 3 -x 750 -y 110 -defaultsOSRD
+preplace port s_axi_Axi_lite -pg 1 -lvl 0 -x 0 -y 380 -defaultsOSRD
+preplace port strm_in -pg 1 -lvl 0 -x 0 -y 410 -defaultsOSRD
+preplace port port-id_axi_resetn -pg 1 -lvl 0 -x 0 -y 70 -defaultsOSRD
+preplace port port-id_completed1 -pg 1 -lvl 3 -x 750 -y 440 -defaultsOSRD
+preplace port port-id_m_axi_mm2s_aclk -pg 1 -lvl 0 -x 0 -y 100 -defaultsOSRD
+preplace port port-id_m_axis_aclk -pg 1 -lvl 0 -x 0 -y 130 -defaultsOSRD
+preplace portBus frame_ptr_V -pg 1 -lvl 0 -x 0 -y 460 -defaultsOSRD
+preplace inst adapter_axi_1 -pg 1 -lvl 2 -x 520 -y 120 -defaultsOSRD
+preplace inst axis_data_fifo_1 -pg 1 -lvl 1 -x 210 -y 290 -defaultsOSRD
+preplace inst axis_dir_fifo_1 -pg 1 -lvl 1 -x 210 -y 100 -defaultsOSRD
+preplace inst wr_data_dir_adv_1 -pg 1 -lvl 2 -x 520 -y 420 -defaultsOSRD
+preplace netloc completed 1 2 1 NJ 440
+preplace netloc frame_ptr_V_1 1 0 2 NJ 460 NJ
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 2 40 420 NJ
+preplace netloc processing_system7_0_FCLK_CLK1 1 0 2 60 190 340J
+preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 0 2 50 440 NJ
+preplace netloc Conn1 1 0 2 NJ 380 NJ
+preplace netloc Conn2 1 0 2 NJ 410 340J
+preplace netloc adapter_axi_1_out_mm 1 2 1 700J 110n
+preplace netloc axis_data_fifo_1_M_AXIS 1 1 1 330 120n
+preplace netloc axis_dir_fifo_1_M_AXIS 1 1 1 N 100
+preplace netloc wr_data_dir_adv_0_s_data 1 0 3 70 200 NJ 200 700
+preplace netloc wr_data_dir_adv_0_s_dir 1 0 3 70 10 NJ 10 690
+levelinfo -pg 1 0 210 520 750
+pagesize -pg 1 -db -bbox -sgen -170 0 880 520
+"
+}
+

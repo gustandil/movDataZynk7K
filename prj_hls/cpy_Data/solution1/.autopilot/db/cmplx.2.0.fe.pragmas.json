@@ -1,0 +1,19 @@
+{
+  "0": {
+    "basicblocks": 15,
+    "calls": "",
+    "file": "cpyData_copro.cpp",
+    "fileloc": 24,
+    "instructions": 129,
+    "loads": {
+      "G": 11,
+      "L": 3
+    },
+    "name": "cpyData_copro",
+    "stores": {
+      "G": 14,
+      "T": 5
+    },
+    "total_instructions": 129
+  }
+}

@@ -1,0 +1,145 @@
+
+
+================================================================
+== Synthesis Summary Report of 'colector_display'
+================================================================
++ General Information: 
+    * Date:           Sat Sep  2 15:37:36 2023
+    * Version:        2023.1 (Build 3854077 on May  4 2023)
+    * Project:        collector_display
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg484-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------------------+--------+-------+---------+--------+----------+---------+------+----------+------+----+-----------+----------+-----+
+    |       Modules      |  Issue |       | Latency | Latency| Iteration|         | Trip |          |      |    |           |          |     |
+    |       & Loops      |  Type  | Slack | (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|     FF    |    LUT   | URAM|
+    +--------------------+--------+-------+---------+--------+----------+---------+------+----------+------+----+-----------+----------+-----+
+    |+ colector_display  |  Timing|  -0.96|        1|   7.000|         -|        1|     -|       yes|     -|   -|  496 (~0%)|  782 (1%)|    -|
+    +--------------------+--------+-------+---------+--------+----------+---------+------+----------+------+----+-----------+----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++----------------+------------+---------------+--------+----------+
+| Interface      | Data Width | Address Width | Offset | Register |
++----------------+------------+---------------+--------+----------+
+| s_axi_Axi_lite | 32         | 7             | 16     | 0        |
++----------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++----------------+---------------------+--------+-------+--------+----------------------------------+-------------------------+
+| Interface      | Register            | Offset | Width | Access | Description                      | Bit Fields              |
++----------------+---------------------+--------+-------+--------+----------------------------------+-------------------------+
+| s_axi_Axi_lite | total_size          | 0x10   | 32    | W      | Data signal of total_size        |                         |
+| s_axi_Axi_lite | accum_total_1       | 0x18   | 32    | R      | Data signal of accum_total       |                         |
+| s_axi_Axi_lite | accum_total_2       | 0x1c   | 32    | R      | Data signal of accum_total       |                         |
+| s_axi_Axi_lite | accum_total_ctrl    | 0x20   | 32    | R      | Control signal of accum_total    | 0=accum_total_ap_vld    |
+| s_axi_Axi_lite | processed_elem      | 0x30   | 32    | R      | Data signal of processed_elem    |                         |
+| s_axi_Axi_lite | processed_elem_ctrl | 0x34   | 32    | R      | Control signal of processed_elem | 0=processed_elem_ap_vld |
+| s_axi_Axi_lite | received_img        | 0x40   | 32    | R      | Data signal of received_img      |                         |
+| s_axi_Axi_lite | received_img_ctrl   | 0x44   | 32    | R      | Control signal of received_img   | 0=received_img_ap_vld   |
++----------------+---------------------+--------+-------+--------+----------------------------------+-------------------------+
+
+* AXIS
++-----------+-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| Interface | Direction | Register Mode | TDATA | TDEST | TID | TKEEP | TLAST | TREADY | TSTRB | TUSER | TVALID |
++-----------+-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| strm_in   | in        | both          | 64    | 1     | 1   | 8     | 1     | 1      | 8     | 1     | 1      |
++-----------+-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+
+* Other Ports
++----------+---------+-----------+----------+
+| Port     | Mode    | Direction | Bitwidth |
++----------+---------+-----------+----------+
+| received | ap_none | out       | 1        |
++----------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+----------+
+| Interface | Type         | Ports    |
++-----------+--------------+----------+
+| ap_clk    | clock        | ap_clk   |
+| ap_rst_n  | reset        | ap_rst_n |
+| ap_ctrl   | ap_ctrl_none |          |
++-----------+--------------+----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------------+-----------+---------------------------------------------+
+| Argument       | Direction | Datatype                                    |
++----------------+-----------+---------------------------------------------+
+| strm_in        | in        | stream<hls::axis<ap_uint<64>, 1, 1, 1>, 0>& |
+| total_size     | in        | unsigned int                                |
+| received       | out       | ap_uint<1>&                                 |
+| accum_total    | out       | long long int&                              |
+| processed_elem | out       | unsigned int&                               |
+| received_img   | out       | unsigned int&                               |
++----------------+-----------+---------------------------------------------+
+
+* SW-to-HW Mapping
++----------------+----------------+-----------+-----------------------------------------------+
+| Argument       | HW Interface   | HW Type   | HW Info                                       |
++----------------+----------------+-----------+-----------------------------------------------+
+| strm_in        | strm_in        | interface |                                               |
+| total_size     | s_axi_Axi_lite | register  | name=total_size offset=0x10 range=32          |
+| received       | received       | port      |                                               |
+| accum_total    | s_axi_Axi_lite | register  | name=accum_total_1 offset=0x18 range=32       |
+| accum_total    | s_axi_Axi_lite | register  | name=accum_total_2 offset=0x1c range=32       |
+| accum_total    | s_axi_Axi_lite | register  | name=accum_total_ctrl offset=0x20 range=32    |
+| processed_elem | s_axi_Axi_lite | register  | name=processed_elem offset=0x30 range=32      |
+| processed_elem | s_axi_Axi_lite | register  | name=processed_elem_ctrl offset=0x34 range=32 |
+| received_img   | s_axi_Axi_lite | register  | name=received_img offset=0x40 range=32        |
+| received_img   | s_axi_Axi_lite | register  | name=received_img_ctrl offset=0x44 range=32   |
++----------------+----------------+-----------+-----------------------------------------------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++------------------------+-----+--------+------------+-----+--------+---------+
+| Name                   | DSP | Pragma | Variable   | Op  | Impl   | Latency |
++------------------------+-----+--------+------------+-----+--------+---------+
+| + colector_display     | 0   |        |            |     |        |         |
+|   add_ln65_fu_274_p2   | -   |        | add_ln65   | add | fabric | 0       |
+|   add_ln61_fu_354_p2   | -   |        | add_ln61   | add | fabric | 0       |
+|   phitmp_fu_281_p2     | -   |        | phitmp     | add | fabric | 0       |
+|   add_ln70_1_fu_322_p2 | -   |        | add_ln70_1 | add | fabric | 0       |
+|   add_ln70_fu_332_p2   | -   |        | add_ln70   | add | fabric | 0       |
+|   add_ln78_fu_381_p2   | -   |        | add_ln78   | add | fabric | 0       |
+|   add_ln76_fu_393_p2   | -   |        | add_ln76   | add | fabric | 0       |
++------------------------+-----+--------+------------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+-----------------------------------------------+-------------------------------------------------------------------------+
+| Type      | Options                                       | Location                                                                |
++-----------+-----------------------------------------------+-------------------------------------------------------------------------+
+| interface | axis register both port=strm_in               | ../hls_src/collector_display.cpp:28 in colector_display, strm_in        |
+| interface | s_axilite port=total_size bundle=Axi_lite     | ../hls_src/collector_display.cpp:29 in colector_display, total_size     |
+| interface | s_axilite port=accum_total bundle=Axi_lite    | ../hls_src/collector_display.cpp:30 in colector_display, accum_total    |
+| interface | s_axilite port=processed_elem bundle=Axi_lite | ../hls_src/collector_display.cpp:31 in colector_display, processed_elem |
+| interface | s_axilite port=received_img bundle=Axi_lite   | ../hls_src/collector_display.cpp:32 in colector_display, received_img   |
+| interface | ap_none port=received                         | ../hls_src/collector_display.cpp:33 in colector_display, received       |
+| interface | ap_ctrl_none port=return                      | ../hls_src/collector_display.cpp:34 in colector_display, return         |
+| pipeline  | II=1                                          | ../hls_src/collector_display.cpp:45 in colector_display                 |
++-----------+-----------------------------------------------+-------------------------------------------------------------------------+
+
+

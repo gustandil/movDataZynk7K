@@ -1,0 +1,771 @@
+15:17:52 DEBUG : Logs will be stored at 'D:/ITCL_video/movDataZynq/prj_vitis/path_Through/IDE.log'.
+15:18:41 INFO  : Registering command handlers for Vitis TCF services
+15:18:41 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\ITCL_video\movDataZynq\prj_vitis\path_Through\temp_xsdb_launch_script.tcl
+15:18:44 INFO  : Platform repository initialization has completed.
+15:18:45 INFO  : XSCT server has started successfully.
+15:18:48 INFO  : plnx-install-location is set to ''
+15:18:48 INFO  : Successfully done setting XSCT server connection channel  
+15:18:48 INFO  : Successfully done query RDI_DATADIR 
+15:18:48 INFO  : Successfully done setting workspace for the tool. 
+15:20:49 INFO  : Result from executing command 'getProjects': platfm
+15:20:49 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+15:23:40 INFO  : Checking for BSP changes to sync application flags for project 'path_through'...
+15:23:40 INFO  : Result from executing command 'getProjects': RemoteSystemsTempFiles;path_through;path_through_system;platfm
+15:23:40 WARN  : Failed to closehw "D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm/export/platfm/hw/design_1_wrapper.xsa"
+Reason: D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm/export/platfm/hw/design_1_wrapper.xsa is not available in the current workspace
+use 'getprojects' command to see list of available projects in current workspace
+15:23:40 INFO  : Result from executing command 'getProjects': RemoteSystemsTempFiles;path_through;path_through_system;platfm
+15:23:40 ERROR : Failed to openhw "D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm/export/platfm/hw/design_1_wrapper.xsa"
+Reason: D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm/export/platfm/hw/design_1_wrapper.xsa is not available in the current workspace
+use 'getprojects' command to see list of available projects in current workspace
+15:23:40 ERROR : Failed to update application flags from BSP for 'path_through'. Reason: null
+java.lang.NullPointerException: null
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305) ~[com.xilinx.sdx.sw_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214) ~[com.xilinx.sdx.sw_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:64) ~[com.xilinx.sdx.sdk.core_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160) ~[com.xilinx.sdx.sdk.core_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78) [com.xilinx.sdx.sdk.core_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48) [com.xilinx.sdx.sdk.core_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91) [com.xilinx.sdk.managedbuilder_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.regenerateMakefiles(XilinxGnuMakefileGenerator.java:75) [com.xilinx.sdk.managedbuilder_1.0.0.202305040745.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1006) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:513) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) [org.eclipse.equinox.common_3.11.0.v20200206-0817.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) [org.eclipse.equinox.common_3.11.0.v20200206-0817.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291) [org.eclipse.ui.ide_3.17.0.v20200217-1511.jar:?]
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.700.v20200106-1020.jar:?]
+15:23:52 INFO  : Checking for BSP changes to sync application flags for project 'path_through'...
+15:23:52 INFO  : Result from executing command 'getProjects': RemoteSystemsTempFiles;path_through;path_through_system;platfm
+15:23:52 ERROR : Failed to openhw "D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm/export/platfm/hw/design_1_wrapper.xsa"
+Reason: D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm/export/platfm/hw/design_1_wrapper.xsa is not available in the current workspace
+use 'getprojects' command to see list of available projects in current workspace
+15:23:52 ERROR : Failed to update application flags from BSP for 'path_through'. Reason: null
+java.lang.NullPointerException: null
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305) ~[com.xilinx.sdx.sw_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214) ~[com.xilinx.sdx.sw_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:64) ~[com.xilinx.sdx.sdk.core_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160) ~[com.xilinx.sdx.sdk.core_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78) [com.xilinx.sdx.sdk.core_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48) [com.xilinx.sdx.sdk.core_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91) [com.xilinx.sdk.managedbuilder_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.generateMakefiles(XilinxGnuMakefileGenerator.java:40) [com.xilinx.sdk.managedbuilder_1.0.0.202305040745.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1008) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) [org.eclipse.equinox.common_3.11.0.v20200206-0817.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) [org.eclipse.equinox.common_3.11.0.v20200206-0817.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291) [org.eclipse.ui.ide_3.17.0.v20200217-1511.jar:?]
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.700.v20200106-1020.jar:?]
+15:24:02 INFO  : Checking for BSP changes to sync application flags for project 'path_through'...
+15:24:02 INFO  : Result from executing command 'getProjects': RemoteSystemsTempFiles;path_through;path_through_system;platfm
+15:24:02 ERROR : Failed to openhw "D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm/export/platfm/hw/design_1_wrapper.xsa"
+Reason: D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm/export/platfm/hw/design_1_wrapper.xsa is not available in the current workspace
+use 'getprojects' command to see list of available projects in current workspace
+15:24:02 ERROR : Failed to update application flags from BSP for 'path_through'. Reason: null
+java.lang.NullPointerException: null
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305) ~[com.xilinx.sdx.sw_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214) ~[com.xilinx.sdx.sw_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:64) ~[com.xilinx.sdx.sdk.core_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160) ~[com.xilinx.sdx.sdk.core_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78) [com.xilinx.sdx.sdk.core_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48) [com.xilinx.sdx.sdk.core_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91) [com.xilinx.sdk.managedbuilder_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.generateMakefiles(XilinxGnuMakefileGenerator.java:40) [com.xilinx.sdk.managedbuilder_1.0.0.202305040745.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1008) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) [org.eclipse.equinox.common_3.11.0.v20200206-0817.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) [org.eclipse.equinox.common_3.11.0.v20200206-0817.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291) [org.eclipse.ui.ide_3.17.0.v20200217-1511.jar:?]
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.700.v20200106-1020.jar:?]
+15:24:10 INFO  : Checking for BSP changes to sync application flags for project 'path_through'...
+15:24:10 INFO  : Result from executing command 'getProjects': RemoteSystemsTempFiles;path_through;path_through_system;platfm
+15:24:10 ERROR : Failed to openhw "D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm/export/platfm/hw/design_1_wrapper.xsa"
+Reason: D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm/export/platfm/hw/design_1_wrapper.xsa is not available in the current workspace
+use 'getprojects' command to see list of available projects in current workspace
+15:24:10 ERROR : Failed to update application flags from BSP for 'path_through'. Reason: null
+java.lang.NullPointerException: null
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305) ~[com.xilinx.sdx.sw_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214) ~[com.xilinx.sdx.sw_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:64) ~[com.xilinx.sdx.sdk.core_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160) ~[com.xilinx.sdx.sdk.core_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78) [com.xilinx.sdx.sdk.core_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48) [com.xilinx.sdx.sdk.core_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91) [com.xilinx.sdk.managedbuilder_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.generateMakefiles(XilinxGnuMakefileGenerator.java:40) [com.xilinx.sdk.managedbuilder_1.0.0.202305040745.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1008) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) [org.eclipse.equinox.common_3.11.0.v20200206-0817.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) [org.eclipse.equinox.common_3.11.0.v20200206-0817.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291) [org.eclipse.ui.ide_3.17.0.v20200217-1511.jar:?]
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.700.v20200106-1020.jar:?]
+15:24:47 INFO  : Checking for BSP changes to sync application flags for project 'path_through'...
+15:24:47 INFO  : Result from executing command 'getProjects': RemoteSystemsTempFiles;path_through;path_through_system;platfm
+15:24:47 ERROR : Failed to openhw "D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm/export/platfm/hw/design_1_wrapper.xsa"
+Reason: D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm/export/platfm/hw/design_1_wrapper.xsa is not available in the current workspace
+use 'getprojects' command to see list of available projects in current workspace
+15:24:47 ERROR : Failed to update application flags from BSP for 'path_through'. Reason: null
+java.lang.NullPointerException: null
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305) ~[com.xilinx.sdx.sw_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214) ~[com.xilinx.sdx.sw_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:64) ~[com.xilinx.sdx.sdk.core_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160) ~[com.xilinx.sdx.sdk.core_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78) [com.xilinx.sdx.sdk.core_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48) [com.xilinx.sdx.sdk.core_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91) [com.xilinx.sdk.managedbuilder_1.0.0.202305040745.jar:?]
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.generateMakefiles(XilinxGnuMakefileGenerator.java:40) [com.xilinx.sdk.managedbuilder_1.0.0.202305040745.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1008) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) [org.eclipse.equinox.common_3.11.0.v20200206-0817.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) [org.eclipse.equinox.common_3.11.0.v20200206-0817.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291) [org.eclipse.ui.ide_3.17.0.v20200217-1511.jar:?]
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.700.v20200106-1020.jar:?]
+15:28:13 INFO  : No changes in MSS file content so sources will not be generated.
+15:28:26 INFO  : No changes in MSS file content so sources will not be generated.
+15:28:40 INFO  : Result from executing command 'removePlatformRepo': 
+15:39:09 INFO  : Result from executing command 'removePlatformRepo': 
+16:15:43 INFO  : Hardware specification for platform project 'platfm' is updated.
+16:16:18 DEBUG : Logs will be stored at 'D:/ITCL_video/movDataZynq/prj_vitis/path_Through/IDE.log'.
+16:16:18 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\ITCL_video\movDataZynq\prj_vitis\path_Through\temp_xsdb_launch_script.tcl
+16:16:21 INFO  : XSCT server has started successfully.
+16:16:21 INFO  : Successfully done setting XSCT server connection channel  
+16:16:21 INFO  : plnx-install-location is set to ''
+16:16:21 INFO  : Successfully done query RDI_DATADIR 
+16:16:21 INFO  : Successfully done setting workspace for the tool. 
+16:16:29 INFO  : Registering command handlers for Vitis TCF services
+16:16:31 INFO  : Platform repository initialization has completed.
+16:25:25 INFO  : Hardware specification for platform project 'platfm' is updated.
+16:28:25 INFO  : Result from executing command 'getProjects': platfm;platfm2
+16:28:25 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+16:47:36 INFO  : Result from executing command 'getProjects': platfm;platfm2
+16:47:36 INFO  : Result from executing command 'getPlatforms': platfm2|D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm2/export/platfm2/platfm2.xpfm;xilinx_vck190_base_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+16:52:18 INFO  : Checking for BSP changes to sync application flags for project 'passth'...
+16:53:53 INFO  : Checking for BSP changes to sync application flags for project 'passth'...
+16:59:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:59:53 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6B445A' is selected.
+16:59:53 INFO  : 'jtag frequency' command is executed.
+16:59:53 INFO  : Context for 'APU' is selected.
+16:59:53 INFO  : System reset is completed.
+16:59:56 INFO  : 'after 3000' command is executed.
+16:59:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6B445A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6B445A-23727093-0"}' command is executed.
+16:59:58 INFO  : Device configured successfully with "D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth/_ide/bitstream/design_1_wrapper.bit"
+16:59:58 INFO  : Context for 'APU' is selected.
+16:59:59 INFO  : Hardware design and registers information is loaded from 'D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm2/export/platfm2/hw/design_1_wrapper.xsa'.
+16:59:59 INFO  : 'configparams force-mem-access 1' command is executed.
+16:59:59 INFO  : Context for 'APU' is selected.
+16:59:59 INFO  : Sourcing of 'D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth/_ide/psinit/ps7_init.tcl' is done.
+17:00:00 INFO  : 'ps7_init' command is executed.
+17:00:00 INFO  : 'ps7_post_config' command is executed.
+17:00:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:00:01 INFO  : The application 'D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth/Debug/passth.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:00:02 INFO  : 'configparams force-mem-access 0' command is executed.
+17:00:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6B445A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6B445A-23727093-0"}
+fpga -file D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm2/export/platfm2/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth/Debug/passth.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:00:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:00:02 INFO  : 'con' command is executed.
+17:00:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:00:02 INFO  : Launch script is exported to file 'D:\ITCL_video\movDataZynq\prj_vitis\path_Through\passth_system\_ide\scripts\debugger_passth-default.tcl'
+17:05:11 INFO  : Checking for BSP changes to sync application flags for project 'passth'...
+17:14:58 INFO  : Checking for BSP changes to sync application flags for project 'passth'...
+17:15:36 INFO  : Checking for BSP changes to sync application flags for project 'passth'...
+17:16:20 INFO  : Disconnected from the channel tcfchan#3.
+17:16:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6B445A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6B445A-23727093-0"}' command is executed.
+17:16:22 INFO  : 'fpga -state' command is executed.
+17:16:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:16:22 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6B445A' is selected.
+17:16:22 INFO  : 'jtag frequency' command is executed.
+17:16:22 INFO  : Context for 'APU' is selected.
+17:16:22 INFO  : Hardware design and registers information is loaded from 'D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm2/export/platfm2/hw/design_1_wrapper.xsa'.
+17:16:22 INFO  : 'configparams force-mem-access 1' command is executed.
+17:16:22 INFO  : Context for 'APU' is selected.
+17:16:22 INFO  : 'stop' command is executed.
+17:16:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:16:22 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:16:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:16:24 INFO  : The application 'D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth/Debug/passth.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:16:24 INFO  : 'configparams force-mem-access 0' command is executed.
+17:16:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm2/export/platfm2/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+stop
+targets -set -nocase -filter {name =~ "*A9*#0"}
+rst -processor
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth/Debug/passth.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:16:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:16:24 INFO  : 'con' command is executed.
+17:16:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:16:24 INFO  : Launch script is exported to file 'D:\ITCL_video\movDataZynq\prj_vitis\path_Through\passth_system\_ide\scripts\passth-default_1.tcl'
+17:17:45 INFO  : Checking for BSP changes to sync application flags for project 'passth'...
+17:17:58 INFO  : Disconnected from the channel tcfchan#4.
+17:18:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6B445A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6B445A-23727093-0"}' command is executed.
+17:18:01 INFO  : 'fpga -state' command is executed.
+17:18:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:18:01 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6B445A' is selected.
+17:18:01 INFO  : 'jtag frequency' command is executed.
+17:18:01 INFO  : Context for 'APU' is selected.
+17:18:01 INFO  : Hardware design and registers information is loaded from 'D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm2/export/platfm2/hw/design_1_wrapper.xsa'.
+17:18:01 INFO  : 'configparams force-mem-access 1' command is executed.
+17:18:01 INFO  : Context for 'APU' is selected.
+17:18:01 INFO  : 'stop' command is executed.
+17:18:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:18:01 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:18:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:18:03 INFO  : The application 'D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth/Debug/passth.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:18:03 INFO  : 'configparams force-mem-access 0' command is executed.
+17:18:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm2/export/platfm2/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+stop
+targets -set -nocase -filter {name =~ "*A9*#0"}
+rst -processor
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth/Debug/passth.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:18:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:18:03 INFO  : 'con' command is executed.
+17:18:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:18:03 INFO  : Launch script is exported to file 'D:\ITCL_video\movDataZynq\prj_vitis\path_Through\passth_system\_ide\scripts\passth-default_1.tcl'
+17:19:19 INFO  : Checking for BSP changes to sync application flags for project 'passth'...
+17:22:27 INFO  : Checking for BSP changes to sync application flags for project 'passth'...
+17:22:35 INFO  : Disconnected from the channel tcfchan#5.
+17:22:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6B445A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6B445A-23727093-0"}' command is executed.
+17:22:38 INFO  : 'fpga -state' command is executed.
+17:22:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:22:39 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6B445A' is selected.
+17:22:39 INFO  : 'jtag frequency' command is executed.
+17:22:39 INFO  : Context for 'APU' is selected.
+17:22:39 INFO  : Hardware design and registers information is loaded from 'D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm2/export/platfm2/hw/design_1_wrapper.xsa'.
+17:22:39 INFO  : 'configparams force-mem-access 1' command is executed.
+17:22:39 INFO  : Context for 'APU' is selected.
+17:22:39 INFO  : 'stop' command is executed.
+17:22:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:22:39 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:22:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:22:41 INFO  : The application 'D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth/Debug/passth.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:22:41 INFO  : 'configparams force-mem-access 0' command is executed.
+17:22:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm2/export/platfm2/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+stop
+targets -set -nocase -filter {name =~ "*A9*#0"}
+rst -processor
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth/Debug/passth.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:22:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:22:41 INFO  : 'con' command is executed.
+17:22:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:22:41 INFO  : Launch script is exported to file 'D:\ITCL_video\movDataZynq\prj_vitis\path_Through\passth_system\_ide\scripts\passth-default_1.tcl'
+17:24:03 INFO  : Checking for BSP changes to sync application flags for project 'passth'...
+17:25:40 INFO  : Checking for BSP changes to sync application flags for project 'passth'...
+17:40:26 INFO  : Checking for BSP changes to sync application flags for project 'passth'...
+17:40:32 INFO  : Disconnected from the channel tcfchan#6.
+17:40:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6B445A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6B445A-23727093-0"}' command is executed.
+17:40:33 INFO  : 'fpga -state' command is executed.
+17:40:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:40:34 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6B445A' is selected.
+17:40:34 INFO  : 'jtag frequency' command is executed.
+17:40:34 INFO  : Context for 'APU' is selected.
+17:40:34 INFO  : Hardware design and registers information is loaded from 'D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm2/export/platfm2/hw/design_1_wrapper.xsa'.
+17:40:34 INFO  : 'configparams force-mem-access 1' command is executed.
+17:40:34 INFO  : Context for 'APU' is selected.
+17:40:34 INFO  : 'stop' command is executed.
+17:40:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:40:34 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:40:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:40:36 INFO  : The application 'D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth/Debug/passth.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:40:36 INFO  : 'configparams force-mem-access 0' command is executed.
+17:40:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm2/export/platfm2/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+stop
+targets -set -nocase -filter {name =~ "*A9*#0"}
+rst -processor
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth/Debug/passth.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:40:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:40:37 INFO  : 'con' command is executed.
+17:40:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:40:37 INFO  : Launch script is exported to file 'D:\ITCL_video\movDataZynq\prj_vitis\path_Through\passth_system\_ide\scripts\passth-default_1.tcl'
+17:43:01 INFO  : Checking for BSP changes to sync application flags for project 'passth'...
+17:43:09 INFO  : Disconnected from the channel tcfchan#7.
+17:43:12 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+17:43:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6B445A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6B445A-23727093-0"}' command is executed.
+17:43:19 INFO  : 'fpga -state' command is executed.
+17:43:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:43:21 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6B445A' is selected.
+17:43:21 INFO  : 'jtag frequency' command is executed.
+17:43:21 INFO  : Context for 'APU' is selected.
+17:43:21 INFO  : Hardware design and registers information is loaded from 'D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm2/export/platfm2/hw/design_1_wrapper.xsa'.
+17:43:21 INFO  : 'configparams force-mem-access 1' command is executed.
+17:43:21 INFO  : Context for 'APU' is selected.
+17:43:21 INFO  : 'stop' command is executed.
+17:43:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:43:22 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:43:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:43:25 INFO  : The application 'D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth/Debug/passth.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:43:25 INFO  : 'configparams force-mem-access 0' command is executed.
+17:43:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm2/export/platfm2/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+stop
+targets -set -nocase -filter {name =~ "*A9*#0"}
+rst -processor
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth/Debug/passth.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:43:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:43:25 INFO  : 'con' command is executed.
+17:43:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:43:25 INFO  : Launch script is exported to file 'D:\ITCL_video\movDataZynq\prj_vitis\path_Through\passth_system\_ide\scripts\passth-default_1.tcl'
+17:46:24 INFO  : Checking for BSP changes to sync application flags for project 'passth'...
+17:46:38 INFO  : Disconnected from the channel tcfchan#8.
+17:46:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6B445A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6B445A-23727093-0"}' command is executed.
+17:46:40 INFO  : 'fpga -state' command is executed.
+17:46:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:46:41 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6B445A' is selected.
+17:46:41 INFO  : 'jtag frequency' command is executed.
+17:46:41 INFO  : Context for 'APU' is selected.
+17:46:41 INFO  : Hardware design and registers information is loaded from 'D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm2/export/platfm2/hw/design_1_wrapper.xsa'.
+17:46:41 INFO  : 'configparams force-mem-access 1' command is executed.
+17:46:41 INFO  : Context for 'APU' is selected.
+17:46:41 INFO  : 'stop' command is executed.
+17:46:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:46:41 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:46:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:46:44 INFO  : The application 'D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth/Debug/passth.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:46:44 INFO  : 'configparams force-mem-access 0' command is executed.
+17:46:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm2/export/platfm2/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+stop
+targets -set -nocase -filter {name =~ "*A9*#0"}
+rst -processor
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth/Debug/passth.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:46:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:46:44 INFO  : 'con' command is executed.
+17:46:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:46:44 INFO  : Launch script is exported to file 'D:\ITCL_video\movDataZynq\prj_vitis\path_Through\passth_system\_ide\scripts\passth-default_1.tcl'
+18:18:55 INFO  : Hardware specification for platform project 'platfm2' is updated.
+18:19:27 ERROR : Failed to openhw "D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm2/hw/design_1_wrapper.xsa"
+java.io.IOException: Command [C 611 xsdb eval "::hsi::utils::openhw D:/ITCL_video/movDataZynq/prj_vit...] aborted
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:844) ~[org.eclipse.tcf.core_1.7.0.202305040745.jar:?]
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98) ~[?:?]
+	at java.lang.Thread.run(Thread.java:829) ~[?:?]
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:186) ~[?:?]
+	at java.net.SocketInputStream.read(SocketInputStream.java:140) ~[?:?]
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:290) ~[?:?]
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:351) ~[?:?]
+	at java.io.FilterInputStream.read(FilterInputStream.java:107) ~[?:?]
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:186) ~[org.eclipse.tcf.core_1.7.0.202305040745.jar:?]
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:85) ~[org.eclipse.tcf.core_1.7.0.202305040745.jar:?]
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:329) ~[org.eclipse.tcf.core_1.7.0.202305040745.jar:?]
+18:23:55 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\ITCL_video\movDataZynq\prj_vitis\path_Through\temp_xsdb_launch_script.tcl
+18:24:01 INFO  : XSCT server has started successfully.
+18:27:15 WARN  : channel "tcfchan#9" closed
+18:27:45 DEBUG : Logs will be stored at 'D:/ITCL_video/movDataZynq/prj_vitis/path_Through/IDE.log'.
+18:27:45 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\ITCL_video\movDataZynq\prj_vitis\path_Through\temp_xsdb_launch_script.tcl
+18:27:51 INFO  : XSCT server has started successfully.
+18:27:51 INFO  : Successfully done setting XSCT server connection channel  
+18:27:51 INFO  : plnx-install-location is set to ''
+18:27:51 INFO  : Successfully done setting workspace for the tool. 
+18:27:51 INFO  : Successfully done query RDI_DATADIR 
+18:27:52 INFO  : Registering command handlers for Vitis TCF services
+18:27:55 INFO  : Platform repository initialization has completed.
+18:29:47 INFO  : Result from executing command 'getProjects': platfm;platfm2
+18:29:47 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|C:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+18:29:57 INFO  : Checking for BSP changes to sync application flags for project 'passth'...
+18:30:13 INFO  : The hardware specification used by project 'passth' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+18:30:13 INFO  : The file 'D:\ITCL_video\movDataZynq\prj_vitis\path_Through\passth\_ide\bitstream\design_1_wrapper.bit' stored in project is removed.
+18:30:13 INFO  : The updated bitstream files are copied from platform to folder 'D:\ITCL_video\movDataZynq\prj_vitis\path_Through\passth\_ide\bitstream' in project 'passth'.
+18:30:13 INFO  : The file 'D:\ITCL_video\movDataZynq\prj_vitis\path_Through\passth\_ide\psinit\ps7_init.tcl' stored in project is removed.
+18:30:24 INFO  : The updated ps init files are copied from platform to folder 'D:\ITCL_video\movDataZynq\prj_vitis\path_Through\passth\_ide\psinit' in project 'passth'.
+18:30:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:30:40 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6B445A' is selected.
+18:30:40 INFO  : 'jtag frequency' command is executed.
+18:30:40 INFO  : Context for 'APU' is selected.
+18:30:40 INFO  : System reset is completed.
+18:30:43 INFO  : 'after 3000' command is executed.
+18:30:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6B445A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6B445A-23727093-0"}' command is executed.
+18:30:45 INFO  : Device configured successfully with "D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth/_ide/bitstream/design_1_wrapper.bit"
+18:30:45 INFO  : Context for 'APU' is selected.
+18:30:46 INFO  : Hardware design and registers information is loaded from 'D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm2/export/platfm2/hw/design_1_wrapper.xsa'.
+18:30:46 INFO  : 'configparams force-mem-access 1' command is executed.
+18:30:46 INFO  : Context for 'APU' is selected.
+18:30:46 INFO  : Sourcing of 'D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth/_ide/psinit/ps7_init.tcl' is done.
+18:30:47 INFO  : 'ps7_init' command is executed.
+18:30:47 INFO  : 'ps7_post_config' command is executed.
+18:30:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:30:49 INFO  : The application 'D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth/Debug/passth.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:30:49 INFO  : 'configparams force-mem-access 0' command is executed.
+18:30:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6B445A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6B445A-23727093-0"}
+fpga -file D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm2/export/platfm2/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth/Debug/passth.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:30:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:30:49 INFO  : 'con' command is executed.
+18:30:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:30:49 INFO  : Launch script is exported to file 'D:\ITCL_video\movDataZynq\prj_vitis\path_Through\passth_system\_ide\scripts\debugger_passth-default.tcl'
+18:31:32 INFO  : Checking for BSP changes to sync application flags for project 'passth'...
+18:32:53 INFO  : Disconnected from the channel tcfchan#3.
+18:32:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6B445A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6B445A-23727093-0"}' command is executed.
+18:32:55 INFO  : 'fpga -state' command is executed.
+18:32:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:32:55 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6B445A' is selected.
+18:32:55 INFO  : 'jtag frequency' command is executed.
+18:32:55 INFO  : Context for 'APU' is selected.
+18:32:55 INFO  : Hardware design and registers information is loaded from 'D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm2/export/platfm2/hw/design_1_wrapper.xsa'.
+18:32:55 INFO  : 'configparams force-mem-access 1' command is executed.
+18:32:55 INFO  : Context for 'APU' is selected.
+18:32:55 INFO  : 'stop' command is executed.
+18:32:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:32:55 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+18:32:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:32:57 INFO  : The application 'D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth/Debug/passth.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:32:57 INFO  : 'configparams force-mem-access 0' command is executed.
+18:32:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm2/export/platfm2/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+stop
+targets -set -nocase -filter {name =~ "*A9*#0"}
+rst -processor
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth/Debug/passth.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:32:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:32:57 INFO  : 'con' command is executed.
+18:32:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:32:57 INFO  : Launch script is exported to file 'D:\ITCL_video\movDataZynq\prj_vitis\path_Through\passth_system\_ide\scripts\passth-default_1.tcl'
+18:33:07 INFO  : Checking for BSP changes to sync application flags for project 'passth'...
+18:33:17 INFO  : Disconnected from the channel tcfchan#4.
+18:33:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6B445A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6B445A-23727093-0"}' command is executed.
+18:33:20 INFO  : 'fpga -state' command is executed.
+18:33:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:33:20 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6B445A' is selected.
+18:33:20 INFO  : 'jtag frequency' command is executed.
+18:33:20 INFO  : Context for 'APU' is selected.
+18:33:20 INFO  : Hardware design and registers information is loaded from 'D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm2/export/platfm2/hw/design_1_wrapper.xsa'.
+18:33:20 INFO  : 'configparams force-mem-access 1' command is executed.
+18:33:20 INFO  : Context for 'APU' is selected.
+18:33:21 INFO  : 'stop' command is executed.
+18:33:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:33:21 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+18:33:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:33:22 INFO  : The application 'D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth/Debug/passth.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:33:22 INFO  : 'configparams force-mem-access 0' command is executed.
+18:33:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm2/export/platfm2/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+stop
+targets -set -nocase -filter {name =~ "*A9*#0"}
+rst -processor
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth/Debug/passth.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:33:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:33:23 INFO  : 'con' command is executed.
+18:33:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:33:23 INFO  : Launch script is exported to file 'D:\ITCL_video\movDataZynq\prj_vitis\path_Through\passth_system\_ide\scripts\passth-default_1.tcl'
+18:34:54 INFO  : Checking for BSP changes to sync application flags for project 'passth'...
+18:35:04 INFO  : Disconnected from the channel tcfchan#5.
+18:35:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6B445A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6B445A-23727093-0"}' command is executed.
+18:35:06 INFO  : 'fpga -state' command is executed.
+18:35:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:35:06 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6B445A' is selected.
+18:35:06 INFO  : 'jtag frequency' command is executed.
+18:35:06 INFO  : Context for 'APU' is selected.
+18:35:06 INFO  : Hardware design and registers information is loaded from 'D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm2/export/platfm2/hw/design_1_wrapper.xsa'.
+18:35:06 INFO  : 'configparams force-mem-access 1' command is executed.
+18:35:06 INFO  : Context for 'APU' is selected.
+18:35:06 INFO  : 'stop' command is executed.
+18:35:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:35:07 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+18:35:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:35:08 INFO  : The application 'D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth/Debug/passth.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:35:08 INFO  : 'configparams force-mem-access 0' command is executed.
+18:35:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm2/export/platfm2/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+stop
+targets -set -nocase -filter {name =~ "*A9*#0"}
+rst -processor
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth/Debug/passth.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:35:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:35:09 INFO  : 'con' command is executed.
+18:35:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:35:09 INFO  : Launch script is exported to file 'D:\ITCL_video\movDataZynq\prj_vitis\path_Through\passth_system\_ide\scripts\passth-default_1.tcl'
+20:02:25 INFO  : Disconnected from the channel tcfchan#6.
+20:02:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6B445A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6B445A-23727093-0"}' command is executed.
+20:02:26 INFO  : 'fpga -state' command is executed.
+20:02:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:02:27 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6B445A' is selected.
+20:02:27 INFO  : 'jtag frequency' command is executed.
+20:02:27 INFO  : Context for 'APU' is selected.
+20:02:27 INFO  : Hardware design and registers information is loaded from 'D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm2/export/platfm2/hw/design_1_wrapper.xsa'.
+20:02:27 INFO  : 'configparams force-mem-access 1' command is executed.
+20:02:27 INFO  : Context for 'APU' is selected.
+20:02:27 INFO  : 'stop' command is executed.
+20:02:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:02:27 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+20:02:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:02:29 INFO  : The application 'D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth/Debug/passth.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:02:29 INFO  : 'configparams force-mem-access 0' command is executed.
+20:02:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm2/export/platfm2/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+stop
+targets -set -nocase -filter {name =~ "*A9*#0"}
+rst -processor
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth/Debug/passth.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:02:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:02:29 INFO  : 'con' command is executed.
+20:02:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:02:29 INFO  : Launch script is exported to file 'D:\ITCL_video\movDataZynq\prj_vitis\path_Through\passth_system\_ide\scripts\passth-default_1.tcl'
+20:03:22 INFO  : Disconnected from the channel tcfchan#7.
+20:03:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6B445A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6B445A-23727093-0"}' command is executed.
+20:03:23 INFO  : 'fpga -state' command is executed.
+20:03:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:03:24 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6B445A' is selected.
+20:03:24 INFO  : 'jtag frequency' command is executed.
+20:03:24 INFO  : Context for 'APU' is selected.
+20:03:24 INFO  : Hardware design and registers information is loaded from 'D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm2/export/platfm2/hw/design_1_wrapper.xsa'.
+20:03:24 INFO  : 'configparams force-mem-access 1' command is executed.
+20:03:24 INFO  : Context for 'APU' is selected.
+20:03:24 INFO  : 'stop' command is executed.
+20:03:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:03:24 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+20:03:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:03:25 INFO  : The application 'D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth/Debug/passth.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:03:25 INFO  : 'configparams force-mem-access 0' command is executed.
+20:03:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/ITCL_video/movDataZynq/prj_vitis/path_Through/platfm2/export/platfm2/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+stop
+targets -set -nocase -filter {name =~ "*A9*#0"}
+rst -processor
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/ITCL_video/movDataZynq/prj_vitis/path_Through/passth/Debug/passth.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:03:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:03:26 INFO  : 'con' command is executed.
+20:03:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:03:26 INFO  : Launch script is exported to file 'D:\ITCL_video\movDataZynq\prj_vitis\path_Through\passth_system\_ide\scripts\passth-default_1.tcl'
+22:21:04 INFO  : Disconnected from the channel tcfchan#8.
