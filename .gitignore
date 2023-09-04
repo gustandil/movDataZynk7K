@@ -18,13 +18,13 @@
 #Adding ignore rules for Vivado projects
 
 
-#!prjs_vivado/ exclusions
+#!prj_vivado/ exclusions
 prj_vivado/*
 
-#!prjs_hls/ exclusions
+#!prj_hls/ exclusions
 prj_hls/*
 
-#!prjs_vitis/ exclusions
+#!prj_vitis/ exclusions
 prj_vitis/*
 
 #!No subir words
@@ -32,3 +32,4 @@ prj_vitis/*
 
 # keep the empty folders
 !**/.keep
+
